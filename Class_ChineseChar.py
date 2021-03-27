@@ -1,3 +1,4 @@
+# This is for github test
 class ChineseChar():
     def __init__(self,zi,bihua,wuxing,jixiong):
         self.zi=zi
