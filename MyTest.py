@@ -71,6 +71,42 @@ charstring_ori="蓓,荜,筚,蓖,篦,蔀,篰,苍,橙,篘,莼,笃,饿,谔,鄂,阏,
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
 chinchar16mu= Mylib.printChineseCharlist(charstring_tmp,list(),16,"木","")
 
+# 17画木字
+charstring_ori="蒡,蔽,檦,檗,蔡,柽,苁,葱,蔟,簇,档,瞪,懂,蔸,篼,擀,鸽,篝,购,媾,鸹,馆,簋,蝈,馘,癀,桧,豁,击,玑,激,哜,觊,艰,鞯,捡,检,謇,讲,蒋,鲛,矫,阶,鲒,鞠,鞫,据,飓,糠,颗,髁,恳,莲,联,敛,蓼,蓿,蔻,挎,狯,亏,栏,檑,檩,蒌,篓,簏,蔓,懋,甍,蔑,篾,茑,蓬,蹊,谦,瞧,擎,罄,蕖,阒,篸,蔌,簌,檀,蔚,檄,蓰,辖,罅,芗,魈,蔫,檐,营,狱,岳,箦,蔗,栉,赚,桩"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar17mu= Mylib.printChineseCharlist(charstring_tmp,list(),17,"木","")
+
+# 18画木字
+charstring_ori="槟,檫,蒇,槌,箪,簦,簟,蕫,鹅,额,颚,蕃,搁,隔,鲠,遘,觏,鹄,瞽,归,鲧,簧,蟥,蕙,获,犄,蕺,虮,鲫,鲣,睑,裥,简,谫,槛,糨,蕉,谨,觐,旧,屦,瞿,鹃,蕨,骒,蒉,篑,聩,拦,瞢,拟,腻,柠,骐,骑,荨,襁,鄡,荞,窍,翘,苘,躯,璩,觑,鬈,荛,绕,蕤,蕊,蔬,梼,檮,隗,魏,芜,黠,蕈,颜,蝇,鹆,蜮,簪,蕞"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar18mu= Mylib.printChineseCharlist(charstring_tmp,list(),18,"木","")
+
+# 19画木字
+charstring_ori="薜,簸,橱,薋,蹬,椟,臌,关,犷,薅,薨,蕻,谎,荟,讥,蓟,缰,缴,轿,醮,襟,馑,鲸,鬏,绔,胯,脍,旷,鲲,扩,蕾,枥,栎,橹,麓,难,鲵,攀,麒,髂,签,蔷,跷,缲,黢,醛,萨,薯,薇,蕹,萧,肖,撷,薤,蟹,薪,薛,赝,遗,蚁,薏,蓣,籀"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar19mu= Mylib.printChineseCharlist(charstring_tmp,list(),19,"木","")
+
+# 20画木字
+charstring_ori="藊,藏,榇,筹,篡,鹗,鳄,藁,鳇,攉,蠖,籍,继,舰,藉,警,竞,龃,遽,醵,觉,阚,悬,喾,跨,郐,纩,馈,蓝,篮,栊,栌,檬,藐,篷,脐,蛴,荠,骞,琼,鳅,劝,薷,薹,牺,献,薰,严,邀,议,橼,黦,槠,橥,纂"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar20mu= Mylib.printChineseCharlist(charstring_tmp,list(),20,"木","")
+
+# 21画木字
+charstring_ori="藨,鹘,顾,鳏,颢,饥,鸡,歼,鹣,茧,赆,夔,藜,藕,鞒,驱,饶,薮,藤,嚣,药,艺,龈,莺,樱"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar21mu= Mylib.printChineseCharlist(charstring_tmp,list(),21,"木","")
+
+# 22画木字
+charstring_ori="蔼,龚,瓘,蘅,骄,惧,鱇,邝,籁,苈,蔺,茏,笼,芦,蘑,孽,苹,蕲,氍,权,苏,俨,瘿,龉,鬻,蕴"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar22mu= Mylib.printChineseCharlist(charstring_tmp,list(),22,"木","")
+
+# 23画木字
+charstring_ori="蘩,蛊,鳜,藿,鹪,惊,鹫,蠲,蔹,兰,椤,蓦,蘖,蘧,癯,藓,鼹,验,驿"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar23mu= Mylib.printChineseCharlist(charstring_tmp,list(),23,"木","")
+
+
 # #3画木字
 # charstring_ori="干,工,弓,丌,及,孑,巾,久,口,廿,乞,彡,已"
 # charstring_tmp=Mylib.charStrtolist(charstring_ori)
