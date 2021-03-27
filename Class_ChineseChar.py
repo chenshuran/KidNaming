@@ -1,5 +1,5 @@
 # This is for github test
-# commit to branch feature
+# commit to branch feature 11:34
 class ChineseChar():
     def __init__(self,zi,bihua,wuxing,jixiong):
         self.zi=zi
