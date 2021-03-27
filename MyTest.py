@@ -266,6 +266,43 @@ charstring_ori="岙,岜,坂,坌,辰,坊,坩,均,坎,坑,牡,圻,岐,岍,坍,秃,
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
 chinchar7tu= Mylib.printChineseCharlist(charstring_tmp,list(),7,"土","")
 
+# 8画土字
+charstring_ori="艾,坳,垇,坻,坫,矾,附,矸,岣,岵,岬,坷,岢,岫,盱,坤,垃,峁,岷,坭,爬,帕,坢,坯,坪,坡,坦,坨,宛,往,旺,委,忤,亚,奄,肴,夜,依,抑,佾,咏,呦,侑,於,盂,臾,昀,狁"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar8tu= Mylib.printChineseCharlist(charstring_tmp,list(),8,"土","")
+
+# 9画土字
+charstring_ori="哀,垵,拗,砭,垞,衩,昶,垤,垌,峒,肚,砘,垛,垩,垡,垓,垢,砍,砉,奎,趴,怕,盆,砒,垧,哇,娃,威,韦,畏,胃,瓮,屋,侮,型,峋,押,垭,娅,砑,咽,匽,怏,垚,姚,要,咿,怡,咦,姨,舣,姻,音,垠,俑,勇,幽,疣,羑,囿,宥,纡,舁,禹,垣,爰,约,玥,窀"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar9tu= Mylib.printChineseCharlist(charstring_tmp,list(),9,"土","")
+
+# 10画土字
+charstring_ori="啊,唉,埃,砹,鹌,俺,按,案,盎,敖,芺,峬,城,埕,砥,峨,恩,砝,砩,个,埂,埚,轩,砬,埒,埋,砰,破,埔,砌,峭,窃,容,埏,砷,堍,砣,娓,翁,唔,阢,峡,蚜,氩,恹,胭,宴,晏,氧,恙,眙,酏,益,殷,氤,蚓,祐,迂,邘,育,彧,眢,员,袁,砸,砟,砧,肫"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar10tu= Mylib.printChineseCharlist(charstring_tmp,list(),10,"土","")
+
+# 11画土字
+charstring_ori="挨,庵,唵,埯,崩,埠,堾,埭,岽,硐,堆,岗,硌,崮,硅,崞,胡,基,崛,崆,勖,峥,埴,堀,崃,硭,埝,鸟,啪,培,堋,埤,崎,畦,牵,眭,堂,窕,眺,婉,唯,帷,伟,尉,迕,捂,牾,硒,崤,硎,琊,崖,哑,讶,迓,崦,焉,偃,痒,野,痍,移,异,埸,翌,狺,寅,迎,茔,庸,恿,悠,蚰,蚴,狳,域,欲,蛭"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar11tu= Mylib.printChineseCharlist(charstring_tmp,list(),11,"土","")
+
+# 12画土字
+charstring_ori="捱,媕,啽,晻,胺,媪,傲,奡,堡,堛,嵖,砗,堤,奠,堞,恶,费,黑,堠,画,黄,堪,跖,喹,岚,塄,嵋,垴,蛙,崴,为,围,帏,惟,喂,硪,婺,痦,翕,硖,翔,硝,砚,堰,揶,掖,猗,壹,诒,迤,贻,胰,喑,堙,喁,釉,嵛,鼋,粤,越,崽"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar12tu= Mylib.printChineseCharlist(charstring_tmp,list(),12,"土","")
+
+# 13画土字
+charstring_ori="阿,矮,爱,嗌,揞,暗,嗷,嶅,廒,奥,碑,碚,碘,碉,碇,碓,痱,话,觟,嵴,碱,垲,诩,块,跬,袅,硼,圣,嵊,嵩,塑,碎,塌,塘,填,琬,碗,嵬,猥,痿,艉,猬,温,嗡,握,呜,蜈,坞,勋,埙,睚,衙,揠,蜒,爷,揖,饴,诣,意,裔,饮,佣,雍,蛹,犹,猷,瘀,园,圆,援,塬,氲,恽,晕,愠,轾,稚,嵫"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar13tu= Mylib.printChineseCharlist(charstring_tmp,list(),13,"土","")
+
+
+
+
+# 3画土字
+charstring_ori="己,山,土,丸,兀,丫,也,尢,于"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar3tu= Mylib.printChineseCharlist(charstring_tmp,list(),3,"土","")
 
 # # 3画木和5画火排列
 # mu3huo5=list()
