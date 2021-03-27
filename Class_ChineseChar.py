@@ -9,3 +9,5 @@ class ChineseChar():
         print("笔画", self.bihua)
         print("五行", self.wuxing)
         print("吉凶", self.jixiong)
+
+# test git
