@@ -241,6 +241,31 @@ charstring_ori="叆,纛,揽,鬣,酃,颅,脔,摞,囔"
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
 chinchar25huo= Mylib.printChineseCharlist(charstring_tmp,list(),25,"火","")
 
+# 3画土字
+charstring_ori="己,山,土,丸,兀,丫,也,尢,于"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar3tu= Mylib.printChineseCharlist(charstring_tmp,list(),3,"土","")
+
+# 4画土字
+charstring_ori="厄,切,王,卬,夭,尹,引,尤,友,予,曰,允"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar4tu= Mylib.printChineseCharlist(charstring_tmp,list(),4,"土","")
+
+# 5画土字
+charstring_ori="凹,瓦,戊,矽,央,以,永,用,由,右,幼,孕,仔"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar5tu= Mylib.printChineseCharlist(charstring_tmp,list(),5,"土","")
+
+# 6画土字
+charstring_ori="吖,安,充,地,圪,艮,圭,灰,圾,岌,戌,圳,圮,屺,戍,似,吐,圩,仵,伍,伢,羊,伊,衣,圯,夷,亦,屹,因,有,宇,羽"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar6tu= Mylib.printChineseCharlist(charstring_tmp,list(),6,"土","")
+
+# 7画土字
+charstring_ori="岙,岜,坂,坌,辰,坊,坩,均,坎,坑,牡,圻,岐,岍,坍,秃,完,位,圬,氙,岘,呀,岈,延,冶,矣,佚,役,邑,吲,甬,攸,卣,佑,余,欤,玙,址"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar7tu= Mylib.printChineseCharlist(charstring_tmp,list(),7,"土","")
+
 
 # # 3画木和5画火排列
 # mu3huo5=list()
