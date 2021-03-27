@@ -46,6 +46,30 @@ charstring_ori="茇,苞,苯,笨,苾,梐,彬,梣,茬,趁,笞,茌,崔,笪,笛,兜,
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
 chinchar11mu= Mylib.printChineseCharlist(charstring_tmp,list(),11,"木","")
 
+# 12画木字
+charstring_ori="棒,笔,草,策,茶,枨,茺,楮,篅,荈,棰,茈,茨,答,等,第,棣,迭,栋,筏,棼,茯,尴,皋,胳,袼,给,茛,轱,觚,酤,诂,雇,棺,贯,胱,晷,贵,棍,聒,椁,皓,闳,喉,荒,茴,嵇,极,戢,棘,殛,集,几,掎,悸,迦,袷,跏,间,犍,荐,绛,茭,椒,蛟,绞,窖,喈,街,杰,结,筋,荩,阱,景,痉,窘,啾,厩,掬,椐,莒,讵,距,犋,掘,珺,喀,开,凯,闶,钪,轲,棵,控,椋,植,筐,贶,傀,喟,蛞,棱,荔,络,荦,荬,棉,茗,猊,棚,椑,期,欺,祁,棋,掐,掮,茜,嵌,强,羟,乔,邱,球,诎,蛐,荃,筌,荏,茸,茹,阮,森,筛,耜,覃,棠,茼,统,筒,椭,皖,稀,厦,筅,荇,悻,荀,雅,掩,雁,尧,傜,荑,椅,茵,硬,哟,驭,饫,寓,栈,棹,茱,椎,棕,最"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar12mu= Mylib.printChineseCharlist(charstring_tmp,list(),12,"木","")
+
+# 13画木字
+charstring_ori="嗄,荸,箅,筴,搽,猹,槎,茝,椿,榱,戥,荻,椴,莪,蛾,愕,枫,莩,该,陔,赅,戤,概,感,幹,筻,嗝,塥,跟,绠,诟,彀,痼,诖,琯,诡,跪,嗬,荷,猴,逅,畸,嫉,楫,麂,荚,嫁,拣,笕,减,楗,毽,酱,郊,跤,脚,敫,揭,诘,睫,解,仅,禁,靳,经,茎,睛,胫,敬,迥,揪,舅,琚,雎,榉,绢,筠,揩,慨,楷,戡,莰,稞,窠,嗑,筘,廉,楝,窟,夸,蒯,诓,揆,暌,琨,髡,廓,莨,楞,莉,莅,琳,莽,莓"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar13mu= Mylib.printChineseCharlist(charstring_tmp,list(),13,"木","")
+
+# 14画木字
+charstring_ori="菝,榜,菢,菶,萆,菜,菖,苌,尝,篪,椽,菙,萃,萏,菪,凳,摁,菲,榧,菔,嘎,盖,赶,纲,睾,膏,搞,槁,诰,郜,歌,搿,箇,郠,构,菇,菰,箍,鼓,褂,管,逛,绲,帼,蜾,菡,赫,瘊,槐,萑,夥,箕,暨,跽,嘉,郏,瘕,笺,菅,搛,戬,僭,降,僬,侥,饺,酵,截,竭,诫,骱,紧,廑,菁,腈,兢,僦,裾,菊,矩,皲,菌,郡,忾,犒,裉,箜,榛,筝,骷,酷,筷,魁,睽,匮,愧,莱,榔,菱,榴,杩,樠,萌,墓,幕,萘,箄,裴,菩,桤,萋,嘁,萁,旗,綦,绮,葺,搴,歉,枪,敲,侨,诮,箧,轻,箐,逑,赇,巯,蜷,绻,榷,荣,榕,箬,瑟,菽,槊,菘,算,榫,榻,萄,萜,菟,菀,伪,萎,菥,箫,榍,榭,菸,厌,酽,疑,瘗,蜴,萤,郢,萸,语,妪,箢,瑗,愿,菑,榨,寨,肇,菹"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar14mu= Mylib.printChineseCharlist(charstring_tmp,list(),14,"木","")
+
+# 15画木字
+charstring_ori="葆,萹,箯,标,槽,箣,郴,樗,枞,稻,噔,蒂,腭,樊,葑,橄,稿,葛,赓,巩,穀,广,妫,瑰,郭,掴,荭,篌,糇,葫,槲,篁,蝗,叽,缉,赍,稽,瘠,挤,稷,葭,价,驾,稼,俭,翦,贱,腱,箭,僵,桨,娇,胶,噍,颉,羯,槿,儆,獍,阄,樛,驹,踞,蒈,慷,靠,颏,瞌,蝌,课,缂,抠,萱,箴,侉,侩,宽,款,诳,葵,醌,阃,楼,面,模,耦,葩,篇,葡,槭,葜,悭,椠,庆,穷,茕,萩,蝤,葚,枢,樘,葶,葳,苇,蒍,妩,葸,瞎,贤,缃,葙,箱,蝎,样,仪,谊,毅,莹,媵,窳,葬,樟,荮,著,箸,醉"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar15mu= Mylib.printChineseCharlist(charstring_tmp,list(),15,"木","")
+
+# #3画木字
+# charstring_ori="干,工,弓,丌,及,孑,巾,久,口,廿,乞,彡,已"
+# charstring_tmp=Mylib.charStrtolist(charstring_ori)
+# chinchar3mu= Mylib.printChineseCharlist(charstring_tmp,list(),3,"木","")
 
 # 5画火字
 charstring_ori="丙,代,旦,叨,氐,叮,冬,叻,立,尥,令,另,奶,尼,奴,冉,他,它,田,仝,仗,召,只,左"
