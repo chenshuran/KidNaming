@@ -26,9 +26,19 @@ def charStrtolist(str):
 def printCharLlist(list):
     for i in list:
         # info=i.zi+":"+"笔画"+str(i.bihua)+",五行:"+i.wuxing
-        info = i.zi + "(" + str(i.bihua) + i.wuxing + ")"
+        # info = i.zi + "(" + str(i.bihua) + i.wuxing + ")"
+        info = str(list.index(i)+1)+":"+i.zi
         if list.index(i) + 1 != len(list):
             print(info + ",", end="")
         else:
             print(info)
-print("------------------------------------")
+    print("------------------------------------")
+
+def printChineseCharlist(list1,list2, bihua,wuxing,jixiong):
+    for i in list1:
+        a1 = ChineseChar(i, bihua, wuxing, jixiong)
+        list2.append(a1)
+    print(str(bihua)+"画木字共：" + str(len(list2)) + "个")
+    printCharLlist(list2)
+    # print("------------------------------------")
+    return list2
