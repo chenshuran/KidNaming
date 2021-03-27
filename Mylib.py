@@ -10,6 +10,15 @@ class ChineseChar():
         print("笔画", self.bihua)
         print("五行", self.wuxing)
         print("吉凶", self.jixiong)
+#字集合类
+class ChineseCharSet(object):
+    def __init__(self):
+        pass
+    def Setinfo(self,dict,list):
+        self.dictbybihua=dict
+        self.fulllist=list
+
+
 
 # 名类
 class ChineseName():
