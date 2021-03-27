@@ -1,1 +1,1 @@
-charstring_ori_mu_3="干,工,弓,丌,及,孑,巾,久,口,廿,乞,彡,已"
+# no used at this point
