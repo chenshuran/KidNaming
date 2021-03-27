@@ -11,6 +11,25 @@ class ChineseChar():
         print("五行", self.wuxing)
         print("吉凶", self.jixiong)
 
+# 名类
+class ChineseName():
+    def __init__(self,zi1,bihua1,wuxing1,jixiong1,zi2,bihua2,wuxing2,jixiong2):
+        self.zi1=zi1
+        self.bihua1=bihua1
+        self.wuxing1=wuxing1
+        self.jixiong1=jixiong1
+        self.zi2 = zi2
+        self.bihua2 = bihua2
+        self.wuxing2 = wuxing2
+        self.jixiong2 = jixiong2
+        self.name=zi1+zi2  #名
+        self.zongbihua=bihua1+bihua2  #总笔画
+        self.wuxingdapei=wuxing1+wuxing2 #五行搭配
+    def showinfo(self):
+        print("名字",self.name)
+        print("总笔画", self.zongbihua)
+        print("五行", self.wuxingdapei)
+        print("吉凶", self.jixiong)
 
 # 字串转List
 def charStrtolist(str):
