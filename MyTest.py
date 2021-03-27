@@ -1,4 +1,5 @@
 import Mylib
+import CharStringOriginal
 
 
 # 字串转List
@@ -24,8 +25,8 @@ def printCharLlist(list):
 
 
 print("------------------------------------")
-charstring_ori="干,工,弓,丌,及,孑,巾,久,口,廿,乞,彡,已"
-mu_3new=charStrtolist(charstring_ori)
+# charstring_ori="干,工,弓,丌,及,孑,巾,久,口,廿,乞,彡,已"
+mu_3new=charStrtolist(charstring_ori_mu_3)
 
 # 字List转字类List
 chinchar3mu=list()
