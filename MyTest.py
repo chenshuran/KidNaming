@@ -126,6 +126,11 @@ charstring_ori="颧,谳"
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
 chinchar27mu= Mylib.printChineseCharlist(charstring_tmp,list(),27,"木","")
 
+# 2画火字
+charstring_ori="刁,丁,二,力,了"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar2huo= Mylib.printChineseCharlist(charstring_tmp,list(),2,"火","")
+
 # 3画火字
 charstring_ori="彳,大,孓,女,勺,巳,乇,幺,弋,丈"
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
@@ -296,13 +301,62 @@ charstring_ori="阿,矮,爱,嗌,揞,暗,嗷,嶅,廒,奥,碑,碚,碘,碉,碇,碓,
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
 chinchar13tu= Mylib.printChineseCharlist(charstring_tmp,list(),13,"土","")
 
-
-
-
-# 3画土字
-charstring_ori="己,山,土,丸,兀,丫,也,尢,于"
+# 14画土字
+charstring_ori="肮,獒,塝,碥,碴,墋,诞,碲,垫,碟,砜,闺,监,碣,境,墚,顼,嘘,墟,逵,壸,嵝,墁,呕,碰,堑,岖,墒,塾,墅,硕,碳,维,玮,诬,误,寤,瑕,鞋,碹,腌,嫣,耶,腋,祎,旖,夤,瑛,墉,踊,诱,与,鸢,冤,猿,殒,翟,崭,嶂,坠,准"
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
-chinchar3tu= Mylib.printChineseCharlist(charstring_tmp,list(),3,"土","")
+chinchar14tu= Mylib.printChineseCharlist(charstring_tmp,list(),14,"土","")
+
+# 15画土字
+charstring_ori="腤,鞍,璈,墺,嶓,嶒,墀,磁,磋,嶝,墩,堕,废,坟,磙,嘿,糊,蝴,峤,磕,糈,蝰,崂,磊,嶙,碾,嬲,欧,殴,怄,磐,嵚,确,豌,纬,诿,卫,慰,庑,娴,鸦,养,噎,叶,靥,亿,逸,影,慵,忧,邮,鱿,蝣,牖,谀,缘,院,阅,增,磔"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar15tu= Mylib.printChineseCharlist(charstring_tmp,list(),15,"土","")
+
+# 16画土字
+charstring_ori="嗳,嫒,谙,聱,螯,懊,磅,壁,碜,惯,衡,垦,垮,磨,瓯,碛,墙,融,坛,违,谓,怃,歙,遐,鸭,阉,燕,噫,颐,峄,殪,阴,壅,馀,豫,鸳,螈,运,郓,酝,砖"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar16tu= Mylib.printChineseCharlist(charstring_tmp,list(),16,"土","")
+
+# 17画土字
+charstring_ori="隘,闇,鮟,醠,遨,謷,磴,礅,鲑,壕,壑,磺,矶,礁,圹,岭,硗,嵘,闱,鲔,邬,压,阳,嶷,忆,怿,翳,应,婴,膺,拥,优,黝,隅,屿,辕,远,龠,郧"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar17tu= Mylib.printChineseCharlist(charstring_tmp,list(),17,"土","")
+
+# 18画土字
+charstring_ori="碍,瑷,盫,袄,蹦,璧,础,礓,垒,讴,韪,鄢,医,黟,彝,癔,鄞,鄘,鼬,陨"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar18tu= Mylib.printChineseCharlist(charstring_tmp,list(),18,"土","")
+
+# 19画土字
+charstring_ori="爊,礤,坏,疆,坜,垄,垆,稳,鹉,骛,臆,臃,韵"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar19tu= Mylib.printChineseCharlist(charstring_tmp,list(),19,"土","")
+
+# 20画土字
+charstring_ori="骜,巉,矿,岿,砾,壤,鼯,鹜,邺,瘾,嘤,罂"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar20tu= Mylib.printChineseCharlist(charstring_tmp,list(),20,"土","")
+
+# 21画土字
+charstring_ori="鳌,礴,蠡,砺,砻,碌,礞,巍,撄,誉,跃"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar21tu= Mylib.printChineseCharlist(charstring_tmp,list(),21,"土","")
+
+# 22画土字
+charstring_ori="巅,峦,鸥,懿,隐,璎,鳙,饔"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar22tu= Mylib.printChineseCharlist(charstring_tmp,list(),22,"土","")
+
+# 23画土字
+charstring_ori="娈,岩,缨"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar23tu= Mylib.printChineseCharlist(charstring_tmp,list(),23,"土","")
+
+# 24画土字
+charstring_ori="坝,罐,盐,艳,呓"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar24tu= Mylib.printChineseCharlist(charstring_tmp,list(),24,"土","")
+
+
 
 # # 3画木和5画火排列
 # mu3huo5=list()
