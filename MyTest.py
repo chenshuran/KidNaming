@@ -1,8 +1,8 @@
 import Mylib
 
 
-# 字集合转List
-def getcharlist(str):
+# 字串转List
+def charStrtolist(str):
     charlist_temp=list(str)
     charlist_new=[]
     for i in charlist_temp:
@@ -11,8 +11,8 @@ def getcharlist(str):
             if i!=',':
                 charlist_new.append(i)
     return charlist_new
-# 打印字类List（含笔画，五行）
-def printChinesecharlist(list):
+# 打印字List（含笔画，五行）
+def printCharLlist(list):
     for i in list:
         # info=i.zi+":"+"笔画"+str(i.bihua)+",五行:"+i.wuxing
         info = i.zi + "(" + str(i.bihua) + i.wuxing + ")"
@@ -25,7 +25,7 @@ def printChinesecharlist(list):
 
 print("------------------------------------")
 charstring_ori="干,工,弓,丌,及,孑,巾,久,口,廿,乞,彡,已"
-mu_3new=getcharlist(charstring_ori)
+mu_3new=charStrtolist(charstring_ori)
 
 # 字List转字类List
 chinchar3mu=list()
@@ -35,13 +35,13 @@ for i in mu_3new:
 
 # 打印字类List信息（含笔画，五行）
 print("3画木字共："+str(len(mu_3new))+"个")
-printChinesecharlist(chinchar3mu)
+printCharLlist(chinchar3mu)
 
 
 
 print("------------------------------------")
-new="丙,代,旦,叨,氐,叮,冬,叻,立,尥,令,另,奶,尼,奴,冉,他,它,田,仝,仗,召,只,左"
-Huo_5=list(new)
+charstring_ori="丙,代,旦,叨,氐,叮,冬,叻,立,尥,令,另,奶,尼,奴,冉,他,它,田,仝,仗,召,只,左"
+Huo_5=list(charstring_ori)
 # for a in mu_3:
 # mu_3.remove('干')
 Huo_5new=[]
