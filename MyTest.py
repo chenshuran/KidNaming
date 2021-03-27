@@ -4,6 +4,8 @@ Mu_Set=Mylib.ChineseCharSet()
 Huo_Set=Mylib.ChineseCharSet()
 Tu_Set=Mylib.ChineseCharSet()
 
+Goodfrom81=[1,3,5,6,7,11,13,15,16,21,23,24,29,31,32,33,35,37,41,45,47,48,52,57,61,63,65,67,68,81]
+
 # 初始化数据获得木，火，土三个完整字列表
 def MyInitData(ChineseCharSet_Mu,ChineseCharSet_Huo,ChineseCharSet_Tu):
     # 木火土分别按笔画存入字典
@@ -520,14 +522,14 @@ def MyInitData(ChineseCharSet_Mu,ChineseCharSet_Huo,ChineseCharSet_Tu):
     TuFullList = TuFullList + chinchar24tu
     # endregion
 
-    print("---- 测试输出结果 -----")
+
     ChineseCharSet_Mu.dictbybihua=Mu_Dict
     ChineseCharSet_Mu.fulllist=MuFullList
     ChineseCharSet_Huo.dictbybihua = Huo_Dict
     ChineseCharSet_Huo.fulllist = HuoFullList
     ChineseCharSet_Tu.dictbybihua = Tu_Dict
     ChineseCharSet_Tu.fulllist = TuFullList
-    print("---- 完成 -----")
+
     # for i in HuoFullList:
     #     if  (HuoFullList.index(i)+1) % 20 == 0 and HuoFullList.index(i)>0:
     #         print(str(HuoFullList.index(i)+1)+":"+i.zi+str(i.bihua)+"画")
@@ -560,20 +562,24 @@ print(str(len(Mu_Set.fulllist)))
 print(str(len(Huo_Set.fulllist)))
 print(str(len(Tu_Set.fulllist)))
 
-# 木火排列
-#     MuHuoName=list()
-#     for i in MuFullList:
-#         for j in HuoFullList:
-#             name=i.zi+j.zi
-#             # print(name)
-#             MuHuoName.append(name)
-#             # name=j.zi+i.zi
-#             # mu3huo5.append(name)
-#     print("木火排列名字数共："+str(len(MuHuoName))+"个")
-#     for i in MuHuoName:
-#         if  (MuHuoName.index(i)+1) % 20 == 0 and MuHuoName.index(i)>0:
-#             print(str(MuHuoName.index(i)+1)+":"+i)
-#         elif (MuHuoName.index(i)+1) != len(MuHuoName):
-#             print(str(MuHuoName.index(i)+1)+":"+i+",",end="")
-#         else:
-#             print(str(MuHuoName.index(i) + 1) + ":" + i, end="")
+# 木火
+MuHuoName=list()
+Myname=Mylib.ChineseName()
+MuFullList=Mu_Set.fulllist
+HuoFullList=Huo_Set.fulllist
+for i in MuFullList:
+    for j in HuoFullList:
+        Myname.Setinfo(i.zi,i.bihua,i.wuxing,"",j.zi,j.bihua,j.wuxing,"")
+        # MuHuoName.append(Myname)
+        if Myname.zongbihua in Goodfrom81:
+            if Myname.bihua1 in Goodfrom81:
+                MuHuoName.append(Myname)
+
+print("木火名字数共："+str(len(MuHuoName))+"个")
+# for i in MuHuoName:
+#     if  (MuHuoName.index(i)+1) % 20 == 0 and MuHuoName.index(i)>0:
+#         print(str(MuHuoName.index(i)+1)+":"+i)
+#     elif (MuHuoName.index(i)+1) != len(MuHuoName):
+#         print(str(MuHuoName.index(i)+1)+":"+i+",",end="")
+#     else:
+#         print(str(MuHuoName.index(i) + 1) + ":" + i, end="")
