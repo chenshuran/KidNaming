@@ -191,13 +191,56 @@ charstring_ori="皑,僾,熛,噌,层,彻,踟,齿,憏,憃,除,褚,踔,逴,辍,腠,
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
 chinchar15huo= Mylib.printChineseCharlist(charstring_tmp,list(),15,"火","")
 
-
-
-
-# 3画火字
-charstring_ori="彳,大,孓,女,勺,巳,乇,幺,弋,丈"
+# 16画火字
+charstring_ori="撤,陈,撑,鸱,炽,俦,辏,达,殚,掸,惮,导,道,灯,谛,谍,蹀,都,赌,憝,吨,炖,遁,踱,燔,积,撅,獗,琏,撩,獠,燎,璇,臻,赖,褴,螂,捞,擂,缡,璃,罹,历,廪,陵,遛,龙,瘘,卢,陆,录,焖,挠,鲇,哝,诺,逎,燃,烧,燊,遂,鲐,昙,糖,螗,绦,陶,蹄,醍,头,暾,鸵,橐,熹,晓,谑,焰,鸯,晔,燚,燠,璋,瘴,踵,猪,撰,赘,谘,髭"
 charstring_tmp=Mylib.charStrtolist(charstring_ori)
-chinchar3huo= Mylib.printChineseCharlist(charstring_tmp,list(),3,"火","")
+chinchar16huo= Mylib.printChineseCharlist(charstring_tmp,list(),16,"火","")
+
+# 17画火字
+charstring_ori="暧,餲,灿,龀,瞠,骋,丑,黛,担,瘅,挡,蹈,队,鸸,鲕,烩,绩,琎,爵,裢,殓,魉,疗,阑,痨,缧,儡,励,隶,临,瞵,磷,懔,隆,耧,蝼,缕,螺,麋,缪,黏,咛,騃,燧,遢,蹋,饧,膛,螳,醣,誊,嚏,瞳,疃,臀,襄,燮,谣,遥,繇,燥,择,辗,蟑,褶,鸷,膣,螽,烛,纵"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar17huo= Mylib.printChineseCharlist(charstring_tmp,list(),17,"火","")
+
+# 18画火字
+charstring_ori="痴,虫,戳,丛,戴,焘,鞮,癜,断,怼,丰,烬,粮,缭,职,醪,耢,釐,礼,鲤,膦,噜,辘,璐,谬,蛲,耨,懦,适,曙,抬,鹈,题,阗,餮,魍,曛,曜,烨,瞻,障,遮,谪,贽,掷,踬,转,骓,擢"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar18huo= Mylib.printChineseCharlist(charstring_tmp,list(),18,"火","")
+
+# 19画火字
+charstring_ori="薆,摆,爆,蹭,嘲,蛏,歠,骴,哒,裆,邓,鲷,鸫,胴,蹲,齑,际,谲,蹶,帘,臁,蠊,脸,裣,辽,郑,羸,类,离,丽,呖,邻,遴,辚,鲮,馏,咙,撸,庐,氇,蠃,蟆,撵,脓,庞,曝,蹻,烁,谭,韬,鼗,玺,鄩,绎,赠,鄣,辙,骘,鲻"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar19huo= Mylib.printChineseCharlist(charstring_tmp,list(),19,"火","")
+
+# 20画火字
+charstring_ori="宝,阐,郸,党,鲽,窦,嚼,矍,懒,黧,醴,疠,龄,骝,胧,拢,炉,掳,罗,糯,飘,赡,獭,挞,腾,龆,鼍,曦,耀,赢,躅"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar20huo= Mylib.printChineseCharlist(charstring_tmp,list(),20,"火","")
+
+# 21画火字
+charstring_ori="缠,踌,跻,爝,腊,蜡,癞,斓,览,烂,累,俪,疬,珑,髅,骡,曩,鳎,鲦,鳐,鹞,灶,啭,馔,龇"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar21huo= Mylib.printChineseCharlist(charstring_tmp,list(),21,"火","")
+
+# 22画火字
+charstring_ori="颤,龊,籴,叠,读,龛,鲢,邋,粝,躐,鹨,聋,癃,窿,胪,舻,孪,囊,摄,赎,傥,饕,听,弯,鹧"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar22huo= Mylib.printChineseCharlist(charstring_tmp,list(),22,"火","")
+
+# 23画火字
+charstring_ori="雠,恋,鹩,蛎,鳞,麟,轳,挛,栾,猡,猱,摊,体,显"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar23huo= Mylib.printChineseCharlist(charstring_tmp,list(),23,"火","")
+
+# 24画火字
+charstring_ori="螭,鞑,癫,蠹,攫,雳,谰,鳢,灵,陇,鹭,让,闼,瘫,厅,龌,鳣"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar24huo= Mylib.printChineseCharlist(charstring_tmp,list(),24,"火","")
+
+# 25画火字
+charstring_ori="叆,纛,揽,鬣,酃,颅,脔,摞,囔"
+charstring_tmp=Mylib.charStrtolist(charstring_ori)
+chinchar25huo= Mylib.printChineseCharlist(charstring_tmp,list(),25,"火","")
+
 
 # # 3画木和5画火排列
 # mu3huo5=list()
