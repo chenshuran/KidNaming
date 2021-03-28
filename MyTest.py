@@ -1,5 +1,6 @@
 #coding=utf-8
 import Mylib
+import random
 
 #数理81吉祥数
 Goodfrom81=[1,3,5,6,7,11,13,15,16,21,23,24,29,31,32,33,35,37,41,45,47,48,52,57,61,63,65,67,68,81]
@@ -533,14 +534,17 @@ def InitTuData(ChineseCharSet_Tu):
     return ChineseCharSet_Tu
 
 # 初始化
+
 Mu_Set=InitMuData(Mu_Set)
 Huo_Set=InitHuoData(Huo_Set)
 Tu_Set=InitTuData(Tu_Set)
+print()
+print("--------- 初始化完成 ------------")
 print("木属性字："+str(len(Mu_Set.fulllist)))
 print("火属性字："+str(len(Huo_Set.fulllist)))
 print("土属性字："+str(len(Tu_Set.fulllist)))
 
-
+print()
 # 根据名五行顺序得出名字集
 def GetNameByWuxing(fulllist1,fulllist2):
     # ChineseName类队列
@@ -569,14 +573,25 @@ def GetNameByGood81(list):
 
 
 
+print("--------- 火土组合名字 ---------")
 
 NamelistByHuoTu= GetNameByWuxing(Huo_Set.fulllist,Tu_Set.fulllist)
-print("火土名字：" + str(len(NamelistByHuoTu)) + "个")
+# print()
 NamelistByHuoTuBy81=GetNameByGood81(NamelistByHuoTu)
-print("火土,符合81数理名字：" + str(len(NamelistByHuoTuBy81)) + "个")
+print("火土组合共：" + str(len(NamelistByHuoTu)) + "个，"+"其中符合81数理名字：" + str(len(NamelistByHuoTuBy81)) + "个")
 
-for i in reversed(NamelistByHuoTuBy81):
-    if (NamelistByHuoTuBy81.index(i)+1) % 20 != 0:
-        print(i.givenname+",",end="")
-    else:
-        print(i.givenname)
+# 打印名字组合，每行20个
+# for i in reversed(NamelistByHuoTuBy81):
+#     if (NamelistByHuoTuBy81.index(i)+1) % 20 != 0:
+#         print(i.givenname+",",end="")
+#     else:
+#         print(i.givenname)
+
+# 随机显示一个名字的信息
+print()
+i=random.randint(0, len(NamelistByHuoTuBy81))
+print("------- 随机显示第"+str(i)+"个名字的信息 -------")
+lastoflist=NamelistByHuoTuBy81[i]
+lastoflist.showinfo()
+lastoflist.showWuge()
+lastoflist.showSancai()

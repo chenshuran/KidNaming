@@ -47,19 +47,30 @@ class ChineseName():
         self.sancai=str(self.tiange)+str(self.renge)+str(self.dige)
 
     def showinfo(self):
-        print("姓：",self.familyname)
-        print("名：", self.givenname)
-        print("总笔画", self.zongbihua)
-        print("五行", self.wuxingdapei)
+        print()
+        print("【基本信息】")
+        print("姓名：",self.familyname+self.givenname)
+        # print("名：", self.givenname)
+        print("总笔画:", self.zongbihua)
+        print("五行:", self.wuxingdapei)
         # print("吉凶", self.jixiong)
+        # print("-----------------------------")
     def showWuge(self):
-        print("天格："+self.tiange)
-        print("人格："+self.renge)
-        print("地格："+self.dige)
-        print("外格："+self.waige)
-        print("总格："+self.zongge)
+        print()
+        print("【五格】")
+        print("天格："+str(self.tiange))
+        print("人格："+str(self.renge))
+        print("地格："+str(self.dige))
+        print("外格："+str(self.waige))
+        print("总格："+str(self.zongge))
+        # print("-----------------------------")
     def showSancai(self):
-        print("天人地三才为："+self.sancai)
+        print()
+        print("【三才组合】")
+        wugeshuxing={1:"木",2:"木",3:"火",4:"火",5:"土",6:"土",7:"金",8:"金",9:"水",0:"水"}
+        sancanname=wugeshuxing[self.tiange]+wugeshuxing[self.renge]+wugeshuxing[self.dige]
+        print("三才组合为："+str(self.sancai)+"("+sancanname+")")
+        # print("-----------------------------")
 
 
 
@@ -89,7 +100,7 @@ def GetChineseCharlist(list_tmp, list, bihua, wuxing, jixiong):
     for i in list_tmp:
         a1 = ChineseChar(i, bihua, wuxing, jixiong)
         list.append(a1)
-    print(str(bihua)+"画字共：" + str(len(list)) + "个")
+    print(wuxing+str(bihua)+"画字共：" + str(len(list)) + "个")
     printCharList(list)
     # print("------------------------------------")
     return list
