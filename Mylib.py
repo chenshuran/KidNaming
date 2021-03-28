@@ -72,8 +72,6 @@ class ChineseName():
         print("三才组合为："+str(self.sancai)+"("+sancanname+")")
         # print("-----------------------------")
 
-
-
 # 字符串转字列表
 def charStrtolist(str):
     charlist_temp=list(str)
@@ -84,6 +82,7 @@ def charStrtolist(str):
             if i!=',':
                 charlist_new.append(i)
     return charlist_new
+
 # 打印字列表
 def printCharList(list):
     for i in list:
@@ -95,6 +94,7 @@ def printCharList(list):
         else:
             print(info)
     print("------------------------------------")
+
 # 由字列表得到字类列表
 def GetChineseCharlist(list_tmp, list, bihua, wuxing, jixiong):
     for i in list_tmp:
