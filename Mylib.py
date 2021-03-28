@@ -39,12 +39,27 @@ class ChineseName():
         self.fullname=self.familyname+self.zi1+self.zi2  #全名
         self.zongbihua=self.bihua0+self.bihua1+self.bihua2  #总笔画
         self.wuxingdapei="火"+wuxing1+wuxing2 #五行搭配
+        self.tiange=(self.bihua0+1) % 10 #天格
+        self.renge=(self.bihua0+self.bihua1) % 10 #人格
+        self.dige=(self.bihua1+self.bihua2) % 10 #地格
+        self.waige=(self.zongbihua-self.renge) % 10 #外格
+        self.zongge=self.zongbihua % 10 #总格
+        self.sancai=str(self.tiange)+str(self.renge)+str(self.dige)
+
     def showinfo(self):
-        print("姓：",self.name)
-        print("名：", self.name)
+        print("姓：",self.familyname)
+        print("名：", self.givenname)
         print("总笔画", self.zongbihua)
         print("五行", self.wuxingdapei)
-        print("吉凶", self.jixiong)
+        # print("吉凶", self.jixiong)
+    def showWuge(self):
+        print("天格："+self.tiange)
+        print("人格："+self.renge)
+        print("地格："+self.dige)
+        print("外格："+self.waige)
+        print("总格："+self.zongge)
+    def showSancai(self):
+        print("天人地三才为："+self.sancai)
 
 
 

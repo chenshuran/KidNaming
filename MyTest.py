@@ -568,6 +568,8 @@ def GetNameByGood81(list):
     return Myname
 
 
+
+
 NamelistByHuoTu= GetNameByWuxing(Huo_Set.fulllist,Tu_Set.fulllist)
 print("火土名字：" + str(len(NamelistByHuoTu)) + "个")
 NamelistByHuoTuBy81=GetNameByGood81(NamelistByHuoTu)
