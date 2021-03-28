@@ -1,4 +1,4 @@
-# 字类
+# 定义字类
 class ChineseChar():
     def __init__(self,zi,bihua,wuxing,jixiong):
         self.zi=zi
@@ -10,7 +10,9 @@ class ChineseChar():
         print("笔画", self.bihua)
         print("五行", self.wuxing)
         print("吉凶", self.jixiong)
-#字集合类
+
+#定义字集类
+#字集类包含：一个以笔画分组的队列字典dictbybihua，一个字全集队列fulllist)
 class ChineseCharSet(object):
     def __init__(self):
         pass
@@ -18,7 +20,7 @@ class ChineseCharSet(object):
         self.dictbybihua=dict
         self.fulllist=list
 
-# 名类
+# 定义名字类
 class ChineseName():
     def __init__(self):
         pass
@@ -42,7 +44,7 @@ class ChineseName():
 
 
 
-# 字串转List
+# 字符串转字列表
 def charStrtolist(str):
     charlist_temp=list(str)
     charlist_new=[]
@@ -52,7 +54,7 @@ def charStrtolist(str):
             if i!=',':
                 charlist_new.append(i)
     return charlist_new
-# 打印字List（含笔画，五行）
+# 打印字列表
 def printCharList(list):
     for i in list:
         # info=i.zi+":"+"笔画"+str(i.bihua)+",五行:"+i.wuxing
@@ -63,12 +65,12 @@ def printCharList(list):
         else:
             print(info)
     print("------------------------------------")
-
-def GetChineseCharlist(list1, list2, bihua, wuxing, jixiong):
-    for i in list1:
+# 由字列表得到字类列表
+def GetChineseCharlist(list_tmp, list, bihua, wuxing, jixiong):
+    for i in list_tmp:
         a1 = ChineseChar(i, bihua, wuxing, jixiong)
-        list2.append(a1)
-    print(str(bihua)+"画木字共：" + str(len(list2)) + "个")
-    printCharList(list2)
+        list.append(a1)
+    print(str(bihua)+"画字共：" + str(len(list)) + "个")
+    printCharList(list)
     # print("------------------------------------")
-    return list2
+    return list
