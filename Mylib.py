@@ -25,6 +25,8 @@ class ChineseName():
     def __init__(self):
         pass
     def Setinfo(self,zi1,bihua1,wuxing1,jixiong1,zi2,bihua2,wuxing2,jixiong2):
+        self.familyname="陈"
+        self.bihua0=16
         self.zi1=zi1
         self.bihua1=bihua1
         self.wuxing1=wuxing1
@@ -33,11 +35,13 @@ class ChineseName():
         self.bihua2 = bihua2
         self.wuxing2 = wuxing2
         self.jixiong2 = jixiong2
-        self.name="陈"+zi1+zi2  #名
-        self.zongbihua=16+bihua1+bihua2  #总笔画
+        self.givenname=self.zi1+self.zi2 #名
+        self.fullname=self.familyname+self.zi1+self.zi2  #全名
+        self.zongbihua=self.bihua0+self.bihua1+self.bihua2  #总笔画
         self.wuxingdapei="火"+wuxing1+wuxing2 #五行搭配
     def showinfo(self):
-        print("名字",self.name)
+        print("姓：",self.name)
+        print("名：", self.name)
         print("总笔画", self.zongbihua)
         print("五行", self.wuxingdapei)
         print("吉凶", self.jixiong)

@@ -4,14 +4,13 @@ import Mylib
 #数理81吉祥数
 Goodfrom81=[1,3,5,6,7,11,13,15,16,21,23,24,29,31,32,33,35,37,41,45,47,48,52,57,61,63,65,67,68,81]
 
+
 # 创建木，火，土字集实例
 Mu_Set=Mylib.ChineseCharSet()
 Huo_Set=Mylib.ChineseCharSet()
 Tu_Set=Mylib.ChineseCharSet()
 
-
-
-# 初始化函数木，火，土字集实例
+# 木，火，土字集初始化函数
 def InitMuData(ChineseCharSet_Mu):
     # region 木字初始化
     Mu_Dict = {}
@@ -533,33 +532,49 @@ def InitTuData(ChineseCharSet_Tu):
     ChineseCharSet_Tu.fulllist = TuFullList
     return ChineseCharSet_Tu
 
+# 初始化
 Mu_Set=InitMuData(Mu_Set)
 Huo_Set=InitHuoData(Huo_Set)
 Tu_Set=InitTuData(Tu_Set)
-
 print("木属性字："+str(len(Mu_Set.fulllist)))
 print("火属性字："+str(len(Huo_Set.fulllist)))
 print("土属性字："+str(len(Tu_Set.fulllist)))
 
-Myname=Mylib.ChineseName()
-# 根据二字的五行顺序得出组合名字
+
+# 根据名五行顺序得出名字集
 def GetNameByWuxing(fulllist1,fulllist2):
-    # 木火
+    # ChineseName类队列
     Namelist=list()
+
     FullList1=fulllist1
     FullList2=fulllist2
     for i in fulllist1:
         for j in fulllist2:
+            # 创建名字类例
+            Myname = Mylib.ChineseName()
             Myname.Setinfo(i.zi,i.bihua,i.wuxing,"",j.zi,j.bihua,j.wuxing,"")
             Namelist.append(Myname)
-
-
+    #         print(Myname.givenname,end="")
+    # print(str(len(Namelist)))
     return Namelist
 
-# if Myname.zongbihua in Goodfrom81:
-#                 Namelist.append(Myname)
+# 根据81数理吉凶得出吉利名字
+def GetNameByGood81(list):
+    Myname=[]
+    for i in list:
+        if i.zongbihua in Goodfrom81:
+           Myname.append(i)
+
+    return Myname
+
 
 NamelistByHuoTu= GetNameByWuxing(Huo_Set.fulllist,Tu_Set.fulllist)
-print("火土名字：" + str(len(NamelistByHuoTu)) + "个（根据81数理，已去除总笔画不吉利的）")
-NamelistByTuHup= GetNameByWuxing(Tu_Set.fulllist,Huo_Set.fulllist)
-print("土火名字：" + str(len(NamelistByHuoTu)) + "个（根据81数理，已去除总笔画不吉利的）")
+print("火土名字：" + str(len(NamelistByHuoTu)) + "个")
+NamelistByHuoTuBy81=GetNameByGood81(NamelistByHuoTu)
+print("火土,符合81数理名字：" + str(len(NamelistByHuoTuBy81)) + "个")
+
+for i in reversed(NamelistByHuoTuBy81):
+    if (NamelistByHuoTuBy81.index(i)+1) % 20 != 0:
+        print(i.givenname+",",end="")
+    else:
+        print(i.givenname)
