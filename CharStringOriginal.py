@@ -32,3 +32,10 @@
 # lastoflist.showinfo()
 # lastoflist.showWuge()
 # lastoflist.showSancai()
+
+# numtest=0
+# string1="哈哈哈"
+# string2="嘿嘿嘿"
+# string3="啦啦啦"
+# print(getcharstringbynum(numtest,string1,string2,string3))
+# print("_________________________________")

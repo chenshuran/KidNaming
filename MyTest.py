@@ -7,14 +7,15 @@ Goodfrom81=[1,3,5,6,7,11,13,15,16,21,23,24,29,31,32,33,35,37,41,45,47,48,52,57,6
 
 CharsetNum=0
 
-def num_to_string(num):
+def getcharstringbynum(num,string01,string02,string03):
     numbers = {
-        0 : "zero",
-        1 : "one",
-        2 : "two",
-        3 : "three"
+        1 : string01,
+        2 : string02,
+        3 : string03
     }
-    return numbers.get(num, None)
+    return numbers.get(num, "无")
+
+
 
 # 创建木，火，土字集实例
 Mu_Set=Mylib.ChineseCharSet()
