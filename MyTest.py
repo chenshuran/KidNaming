@@ -257,192 +257,312 @@ def InitHuoData(ChineseCharSet_Huo):
     HuoFullList = HuoFullList + chinchar4huo
 
     # 5画火字
-    # charstring_ori = "丙,代,旦,叨,氐,叮,冬,叻,立,尥,令,另,奶,尼,奴,冉,他,它,田,仝,仗,召,只,左"
-    charstring_ori = "代,旦,叮,冬,立,令,另,冉,田,仗,召,左"
+    charstring_01 = "丙,代,旦,叨,氐,叮,冬,叻,立,尥,令,另,奶,尼,奴,冉,他,它,田,仝,仗,召,只,左"
+    charstring_02 = "代,旦,叮,冬,立,令,另,冉,田,仗,召,左"
+    charstring_03 = "代,旦,叮,冬,立,令,另,冉,田,仗,召,左"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar5huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 5, "火", "")
     Huo_Dict[5] = chinchar5huo
     HuoFullList = HuoFullList + chinchar5huo
 
     # 6画火字
-    # charstring_ori = "吃,弛,打,忉,氘,多,耳,旮,亘,光,尖,匠,她,决,旯,老,耒,劣,六,甪,氖,囡,年,乓,全,肉,同,氽,佤,妄,吆,宅,兆,旨,至,仲,自"
-    charstring_ori = "多,亘,光,匠,六,年,全,同,兆,至,仲,自"
+    charstring_01 = "吃,弛,打,忉,氘,多,耳,旮,亘,光,尖,匠,她,决,旯,老,耒,劣,六,甪,氖,囡,年,乓,全,肉,同,氽,佤,妄,吆,宅,兆,旨,至,仲,自"
+    charstring_02 = "多,亘,光,匠,六,年,全,同,兆,至,仲,自"
+    charstring_03 = "驰,多,亘,光,匠,六,年,全,同,兆,至,仲,自"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar6huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 6, "火", "")
     Huo_Dict[6] = chinchar6huo
     HuoFullList = HuoFullList + chinchar6huo
 
     # 7画火字
-    # charstring_ori = "犴,呈,辵,呔,甙,但,低,弟,佃,甸,玎,疔,盯,豆,囤,旰,灸,良,牢,李,利,吝,伶,吕,卵,免,男,呐,佞,弄,努,求,忐,忑,町,廷,佟,彤,吞,托,佗,妥,巫,妖,佁,佔,志,豸,住,灼,姊,足"
-    charstring_ori = "良,利,伶,免,努,求,廷,彤,托,妥,佔,志,住,灼,足"
+    charstring_01 = "犴,呈,辵,呔,甙,但,低,弟,佃,甸,玎,疔,盯,豆,囤,旰,灸,良,牢,李,利,吝,伶,吕,卵,免,男,呐,佞,弄,努,求,忐,忑,町,廷,佟,彤,吞,托,佗,妥,巫,妖,佁,佔,志,豸,住,灼,姊,足"
+    charstring_02 = "良,利,伶,免,努,求,廷,彤,托,妥,佔,志,住,灼,足"
+    charstring_03 = "良,利,伶,免,努,求,廷,彤,托,妥,佔,志,住,灼,足"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar7huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 7, "火", "")
     Huo_Dict[7] = chinchar7huo
     HuoFullList = HuoFullList + chinchar7huo
 
     # 8画火字
-    # charstring_ori = "哎,佰,长,炒,坼,侈,炊,佽,徂,耷,妲,沓,岱,宕,到,的,狄,底,玓,典,店,耵,定,咚,侗,抖,妒,咄,剁,佴,昉,炅,昊,戽,姐,咎,抉,炕,两,争,政,知,直,昆,剌,来,佬,肋,例,戾,冽,囹,呤,侣,仑,旻,奈,呶,妮,念,弩,疟,妾,炔,乳,侍,帑,弢,忝,佻,帖,投,罔,昕,炎,佯,易,找,制,帙,炙,忠,隹,卓"
-    charstring_ori="佰,长,狄,底,宕,到,典,定,抖,炅,昊,攸,争,枕,知,直,昆,炎,易,制,忠,佳,卓"
+    charstring_01 = "哎,佰,长,炒,坼,侈,炊,佽,徂,耷,妲,沓,岱,宕,到,的,狄,底,玓,典,店,耵,定,咚,侗,抖,妒,咄,剁,佴,昉,炅,昊,戽,姐,咎,抉,炕,两,争,政,知,直,昆,剌,来,佬,肋,例,戾,冽,囹,呤,侣,仑,旻,奈,呶,妮,念,弩,疟,妾,炔,乳,侍,帑,弢,忝,佻,帖,投,罔,昕,炎,佯,易,找,制,帙,炙,忠,隹,卓"
+    charstring_02 = "佰,长,狄,底,宕,到,典,定,抖,炅,昊,攸,争,枕,知,直,昆,炎,易,制,忠,佳,卓"
+    charstring_03 = "佰,长,狄,底,宕,到,典,定,抖,炅,昊,攸,争,枕,知,直,昆,炎,易,制,忠,佳,卓"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar8huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 8, "火", "")
     Huo_Dict[8] = chinchar8huo
     HuoFullList = HuoFullList + chinchar8huo
 
     # 9画火字
-    # charstring_ori = "炳,抶,抽,怛,待,怠,殆,眈,抵,帝,酊,订,段,祋,盹,盾,哆,哚,赴,拐,曷,烀,咴,姞,柬,炯,玦,俊,怜,亮,拉,厘,俚,俐,咧,拎,律,哪,娜,柰,耐,南,怒,虐,炮,炱,泰,炭,畋,殄,亭,突,凃,拖,拓,歪,纨,肟,炫,紃,殃,徉,咬,映,昱,怨,灾,炸,招,昭,者,贞,祉,致,盅,重,纣,胄,炷,籽,秭,耔,奏"
-    charstring_ori="待,抵,段,赴,柬,俊,亮,俐,律,娜,耐,南,泰,亭,昱,招,者,致,胄,炷,籽,奏"
+    charstring_01 = "炳,抶,抽,怛,待,怠,殆,眈,抵,帝,酊,订,段,祋,盹,盾,哆,哚,赴,拐,曷,烀,咴,姞,柬,炯,玦,俊,怜,亮,拉,厘,俚,俐,咧,拎,律,哪,娜,柰,耐,南,怒,虐,炮,炱,泰,炭,畋,殄,亭,突,凃,拖,拓,歪,纨,肟,炫,紃,殃,徉,咬,映,昱,怨,灾,炸,招,昭,者,贞,祉,致,盅,重,纣,胄,炷,籽,秭,耔,奏"
+    charstring_02 = "待,抵,段,赴,柬,俊,亮,俐,律,娜,耐,南,泰,亭,昱,招,者,致,胄,炷,籽,奏"
+    charstring_03 = "待,抵,段,赴,柬,俊,亮,俐,律,娜,耐,南,泰,亭,昱,招,者,致,胄,炷,籽,奏"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar9huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 9, "火", "")
     Huo_Dict[9] = chinchar9huo
     HuoFullList = HuoFullList + chinchar9huo
 
     # 10画火字
-    # charstring_ori = "玳,耽,疸,紞,岛,倒,娣,玷,爹,瓞,冻,恫,蚪,趸,耿,烘,恍,疾,晋,珏,倔,烤,俩,凉,畜,烜,朕,肢,值,朗,烙,哩,娌,料,烈,玲,瓴,凌,留,旅,伦,倮,耄,拿,纳,肭,衲,孬,能,娘,恧,衄,哦,秦,恁,朊,芮,蚋,偌,晒,晌,恕,朔,趿,肽,唐,倘,讨,套,特,疼,屉,倜,恬,甜,挑,条,庭,挺,徒,彖,庹,挖,挝,倭,乌,娭,夏,讯,迅,秧,烊,窈,舀,旃,展,站,珍,秩,舯,衷,冢,祝,倬,笫,恣,哲"
-    charstring_ori="耿,恍,晋,倔,值,玲,凌,留,旅,伦,能,泰,芮,特,恬,庭,挺,夏,讯,迅,秧,哲"
+    charstring_01 = "玳,耽,疸,紞,岛,倒,娣,玷,爹,瓞,冻,恫,蚪,趸,耿,烘,恍,疾,晋,珏,倔,烤,俩,凉,畜,烜,朕,肢,值,朗,烙,哩,娌,料,烈,玲,瓴,凌,留,旅,伦,倮,耄,拿,纳,肭,衲,孬,能,娘,恧,衄,哦,秦,恁,朊,芮,蚋,偌,晒,晌,恕,朔,趿,肽,唐,倘,讨,套,特,疼,屉,倜,恬,甜,挑,条,庭,挺,徒,彖,庹,挖,挝,倭,乌,娭,夏,讯,迅,秧,烊,窈,舀,旃,展,站,珍,秩,舯,衷,冢,祝,倬,笫,恣,哲"
+    charstring_02="耿,恍,晋,倔,值,玲,凌,留,旅,伦,能,芮,特,恬,庭,挺,夏,讯,迅,秧,哲"
+    charstring_03 = "耿,恍,晋,倔,值,玲,凌,留,旅,伦,能,芮,特,恬,庭,挺,夏,讯,迅,秧,哲"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar10huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 10, "火", "")
     Huo_Dict[10] = chinchar10huo
     HuoFullList = HuoFullList + chinchar10huo
 
     # 11画火字
-    # charstring_ori = "欸,捭,蛃,晡,眵,敕,从,凑,绐,带,袋,聃,胆,啖,蛋,盗,羝,顶,啶,动,敚,舵,阨,珥,烽,晗,焓,焊,斛,将,狷,诀,觖,梁,聊,振,执,徕,狼,勒,梨,狸,猁,唳,粒,羚,翎,聆,蛉,娄,卤,鹿,略,囵,捋,珞,那,婥,讷,您,胬,戚,软,晟,胎,酞,贪,袒,啕,剔,悌,粜,烃,停,珽,屠,豚,唾,娲,袜,烷,挽,焐,晞,烯,珣,珧,斩,张,章,帐,啁,侦,痔,窒,舳,捉,啄,眦,偬"
-    charstring_ori="从,凑,给,带,袋,顶,舵,烽,振,聊,执"
+    charstring_01 = "欸,捭,蛃,晡,眵,敕,从,凑,绐,带,袋,聃,胆,啖,蛋,盗,羝,顶,啶,动,敚,舵,阨,珥,烽,晗,焓,焊,斛,将,狷,诀,觖,梁,聊,振,执,徕,狼,勒,梨,狸,猁,唳,粒,羚,翎,聆,蛉,娄,卤,鹿,略,囵,捋,珞,那,婥,讷,您,胬,戚,软,晟,胎,酞,贪,袒,啕,剔,悌,粜,烃,停,珽,屠,豚,唾,娲,袜,烷,挽,焐,晞,烯,珣,珧,斩,张,章,帐,啁,侦,痔,窒,舳,捉,啄,眦,偬"
+    charstring_02 = "从,凑,给,带,袋,顶,舵,烽,振,聊,执"
+    charstring_03 = "从,凑,给,带,袋,顶,舵,烽,振,聊,执"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar11huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 11, "火", "")
     Huo_Dict[11] = chinchar11huo
     HuoFullList = HuoFullList + chinchar11huo
 
     # 12画火字
-    # charstring_ori = "掰,焙,采,场,焯,掣,程,塍,嗒,傣,贷,单,氮,悼,登,迪,觌,诋,邸,睇,掂,阽,惦,跌,喋,耋,痘,短,惇,敦,掇,迩,焚,钬,焦,接,嗟,晶,就,厥,吭,詈,晾,量,欻,诊,轸,证,焜,啦,喇,琅,稂,劳,犁,喱,理,傈,痢,捩,裂,趔,琉,硫,虏,掠,抡,捺,喃,赧,捻,傩,晴,闰,婼,邰,毯,探,掏,啼,腆,掭,祧,迢,贴,婷,痛,饨,跎,酡,惋,惘,喔,窝,幄,寻,循,巽,焱,蛘,轺,轶,媛,蛰,彘,智,痣,轴,粢"
-    charstring_ori="掰,焙,采,场,程,单,登,迪,敦,焦,接,晶,理,铁,媛,智,轴"
+    charstring_01 = "掰,焙,采,场,焯,掣,程,塍,嗒,傣,贷,单,氮,悼,登,迪,觌,诋,邸,睇,掂,阽,惦,跌,喋,耋,痘,短,惇,敦,掇,迩,焚,钬,焦,接,嗟,晶,就,厥,吭,詈,晾,量,欻,诊,轸,证,焜,啦,喇,琅,稂,劳,犁,喱,理,傈,痢,捩,裂,趔,琉,硫,虏,掠,抡,捺,喃,赧,捻,傩,晴,闰,婼,邰,毯,探,掏,啼,腆,掭,祧,迢,贴,婷,痛,饨,跎,酡,惋,惘,喔,窝,幄,寻,循,巽,焱,蛘,轺,轶,媛,蛰,彘,智,痣,轴,粢"
+    charstring_02 = "掰,焙,采,场,程,单,登,迪,敦,焦,接,晶,理,铁,媛,智,轴"
+    charstring_03 = "掰,焙,采,场,程,单,登,迪,敦,焦,接,晶,理,铁,媛,智,轴"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar12huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 12, "火", "")
     Huo_Dict[12] = chinchar12huo
     HuoFullList = HuoFullList + chinchar12huo
 
     # 13画火字
-    # charstring_ori = "稗,煲,煏,煸,裎,嗤,媸,驰,传,搭,靼,迨,亶,当,砀,嗲,电,殿,揲,牒,鼎,督,煅,顿,躲,惰,跺,烦,觥,煳,焕,煌,晃,幌,诙,迹,煎,炼,煊,睐,啷,廊,酪,诔,傫,愣,蜊,里,赁,零,旒,偻,赂,辂,琭,禄,路,乱,煤,睦,乃,恼,农,暖,逄,稔,塔,痰,逃,绨,提,跳,蜓,艇,退,煺,蜕,脱,驮,陀,顽,脘,畹,煨,炜,蜗,熄,烟,琰,扬,旸,炀,徭,虞,煜,詹,盏,照,罩,蜇,郅,置,雉,追,惴,琢,赀,觜,趑,訾"
-    charstring_ori="驰,传,搭,当,鼎,督,煌,煌,幌,迹,炼,路,农,暖,提,烟,扬,照,琢"
+    charstring_01 = "稗,煲,煏,煸,裎,嗤,媸,驰,传,搭,靼,迨,亶,当,砀,嗲,电,殿,揲,牒,鼎,督,煅,顿,躲,惰,跺,烦,觥,煳,焕,煌,晃,幌,诙,迹,煎,炼,煊,睐,啷,廊,酪,诔,傫,愣,蜊,里,赁,零,旒,偻,赂,辂,琭,禄,路,乱,煤,睦,乃,恼,农,暖,逄,稔,塔,痰,逃,绨,提,跳,蜓,艇,退,煺,蜕,脱,驮,陀,顽,脘,畹,煨,炜,蜗,熄,烟,琰,扬,旸,炀,徭,虞,煜,詹,盏,照,罩,蜇,郅,置,雉,追,惴,琢,赀,觜,趑,訾"
+    charstring_02 = "驰,传,搭,当,鼎,督,煌,煌,幌,迹,炼,路,农,暖,提,烟,扬,照,琢"
+    charstring_03 = "驰,传,搭,当,鼎,督,煌,煌,幌,迹,炼,路,农,暖,提,烟,扬,照,琢"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar13huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 13, "火", "")
     Huo_Dict[13] = chinchar13huo
     HuoFullList = HuoFullList + chinchar13huo
 
     # 14画火字
-    # charstring_ori = "熬,畅,尘,逞,瞅,绰,瘩,捣,嘀,嫡,递,腚,胨,郖,逗,端,对,裰,夺,尔,裹,伙,奖,尽,恺,奁,连,踉,僚,寥,廖,瘌,辣,罱,郎,嫪,嫘,酹,嘞,嫠,粼,绫,领,熘,绺,喽,陋,绿,纶,裸,雒,瑙,嫩,宁,喏,搦,炝,熔,煽,裳,台,态,叹,搪,耥,趟,慆,慝,滕,逖,惕,裼,舔,蜩,通,透,图,团,箨,蜿,绾,腕,诶,鞅,疡,摇,荧,毓,搌,绽,嫜,彰,胀,幛,赵,这,祯,种,逐,缀,缁"
-    charstring_ori="畅,尘,逞,瞅,绰,端,尔,伙,连,僚,寥,郎,领,缘,宁,熔,煽,裳,台,态,搪,趟,通鞅,荧,绽,彰,种,逐"
+    charstring_01 = "熬,畅,尘,逞,瞅,绰,瘩,捣,嘀,嫡,递,腚,胨,郖,逗,端,对,裰,夺,尔,裹,伙,奖,尽,恺,奁,连,踉,僚,寥,廖,瘌,辣,罱,郎,嫪,嫘,酹,嘞,嫠,粼,绫,领,熘,绺,喽,陋,绿,纶,裸,雒,瑙,嫩,宁,喏,搦,炝,熔,煽,裳,台,态,叹,搪,耥,趟,慆,慝,滕,逖,惕,裼,舔,蜩,通,透,图,团,箨,蜿,绾,腕,诶,鞅,疡,摇,荧,毓,搌,绽,嫜,彰,胀,幛,赵,这,祯,种,逐,缀,缁"
+    charstring_02 = "畅,尘,逞,瞅,绰,端,尔,伙,连,僚,寥,郎,领,缘,宁,熔,煽,裳,台,态,搪,趟,通鞅,荧,绽,彰,种,逐"
+    charstring_03 = "畅,尘,逞,瞅,绰,端,尔,伙,连,僚,寥,郎,领,缘,宁,熔,煽,裳,台,态,搪,趟,通,鞅,荧,绽,彰,种,逐"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar14huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 14, "火", "")
     Huo_Dict[14] = chinchar14huo
     HuoFullList = HuoFullList + chinchar14huo
 
     # 15画火字
-    # charstring_ori = "皑,僾,熛,噌,层,彻,踟,齿,憏,憃,除,褚,踔,逴,辍,腠,褡,逮,儋,弹,德,敌,骶,缔,踮,调,蝶,董,陡,缎,饵,缓,践,瑾,进,噘,练,谅,辆,嘹,寮,阵,鸩,征,诤,赉,阆,唠,乐,黎,厉,撂,刘,瘤,搂,鲁,逯,戮,虑,轮,论,脶,骆,熳,鼐,腩,蝻,脑"
-    charstring_ori="层,彻,瑾,进,练,谅,阵,征,诤,黎,历,论,侬,瑶"
+    charstring_01 = "皑,僾,熛,噌,层,彻,踟,齿,憏,憃,除,褚,踔,逴,辍,腠,褡,逮,儋,弹,德,敌,骶,缔,踮,调,蝶,董,陡,缎,饵,缓,践,瑾,进,噘,练,谅,辆,嘹,寮,阵,鸩,征,诤,赉,阆,唠,乐,黎,厉,撂,刘,瘤,搂,鲁,逯,戮,虑,轮,论,脶,骆,熳,鼐,腩,蝻,脑"
+    charstring_02 = "层,彻,瑾,进,练,谅,阵,征,诤,黎,历,论,侬,瑶"
+    charstring_03 = "层,彻,瑾,进,练,谅,阵,征,诤,黎,历,论,侬,瑶"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar15huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 15, "火", "")
     Huo_Dict[15] = chinchar15huo
     HuoFullList = HuoFullList + chinchar15huo
 
     # 16画火字
-    # charstring_ori = "撤,陈,撑,鸱,炽,俦,辏,达,殚,掸,惮,导,道,灯,谛,谍,蹀,都,赌,憝,吨,炖,遁,踱,燔,积,撅,獗,琏,撩,獠,燎,璇,臻,赖,褴,螂,捞,擂,缡,璃,罹,历,廪,陵,遛,龙,瘘,卢,陆,录,焖,挠,鲇,哝,诺,逎,燃,烧,燊,遂,鲐,昙,糖,螗,绦,陶,蹄,醍,头,暾,鸵,橐,熹,晓,谑,焰,鸯,晔,燚,燠,璋,瘴,踵,猪,撰,赘,谘,髭"
-    charstring_ori="达,掸,导,道,积,琏,璇,臻,擂,历,龙,录,诺,燃,晓,晔媛,壁,惯,衡,恳,融,燕,余,豫,鸳,运,酝"
+    charstring_01 = "撤,陈,撑,鸱,炽,俦,辏,达,殚,掸,惮,导,道,灯,谛,谍,蹀,都,赌,憝,吨,炖,遁,踱,燔,积,撅,獗,琏,撩,獠,燎,璇,臻,赖,褴,螂,捞,擂,缡,璃,罹,历,廪,陵,遛,龙,瘘,卢,陆,录,焖,挠,鲇,哝,诺,逎,燃,烧,燊,遂,鲐,昙,糖,螗,绦,陶,蹄,醍,头,暾,鸵,橐,熹,晓,谑,焰,鸯,晔,燚,燠,璋,瘴,踵,猪,撰,赘,谘,髭"
+    charstring_02 = "达,掸,导,道,积,琏,璇,臻,擂,历,龙,录,诺,燃,晓,晔媛,壁,惯,衡,恳,融,燕,余,豫,鸳,运,酝"
+    charstring_03 = "达,掸,导,道,积,琏,璇,臻,擂,历,龙,录,诺,燃,晓,晔,媛,壁,惯,衡,恳,融,燕,余,豫,鸳,运,酝"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar16huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 16, "火", "")
     Huo_Dict[16] = chinchar16huo
     HuoFullList = HuoFullList + chinchar16huo
 
     # 17画火字
-    # charstring_ori = "暧,餲,灿,龀,瞠,骋,丑,黛,担,瘅,挡,蹈,队,鸸,鲕,烩,绩,琎,爵,裢,殓,魉,疗,阑,痨,缧,儡,励,隶,临,瞵,磷,懔,隆,耧,蝼,缕,螺,麋,缪,黏,咛,騃,燧,遢,蹋,饧,膛,螳,醣,誊,嚏,瞳,疃,臀,襄,燮,谣,遥,繇,燥,择,辗,蟑,褶,鸷,膣,螽,烛,纵"
-    charstring_ori="暖,灿,骋黛,挡,蹈,队,绩,励,隶,临,瞵,磷,隆,瞳,遥,择,纵"
+    charstring_01 = "暧,餲,灿,龀,瞠,骋,丑,黛,担,瘅,挡,蹈,队,鸸,鲕,烩,绩,琎,爵,裢,殓,魉,疗,阑,痨,缧,儡,励,隶,临,瞵,磷,懔,隆,耧,蝼,缕,螺,麋,缪,黏,咛,騃,燧,遢,蹋,饧,膛,螳,醣,誊,嚏,瞳,疃,臀,襄,燮,谣,遥,繇,燥,择,辗,蟑,褶,鸷,膣,螽,烛,纵"
+    charstring_02 = "暖,灿,骋黛,挡,蹈,队,绩,励,隶,临,瞵,磷,隆,瞳,遥,择,纵"
+    charstring_03 = "暖,灿,骋,黛,挡,蹈,队,绩,励,隶,临,瞵,磷,隆,瞳,遥,择,纵"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar17huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 17, "火", "")
     Huo_Dict[17] = chinchar17huo
     HuoFullList = HuoFullList + chinchar17huo
 
     # 18画火字
-    # charstring_ori = "痴,虫,戳,丛,戴,焘,鞮,癜,断,怼,丰,烬,粮,缭,职,醪,耢,釐,礼,鲤,膦,噜,辘,璐,谬,蛲,耨,懦,适,曙,抬,鹈,题,阗,餮,魍,曛,曜,烨,瞻,障,遮,谪,贽,掷,踬,转,骓,擢"
-    charstring_ori="丛,焘,丰,职,题,烨,障,掷,转"
+    charstring_01 = "痴,虫,戳,丛,戴,焘,鞮,癜,断,怼,丰,烬,粮,缭,职,醪,耢,釐,礼,鲤,膦,噜,辘,璐,谬,蛲,耨,懦,适,曙,抬,鹈,题,阗,餮,魍,曛,曜,烨,瞻,障,遮,谪,贽,掷,踬,转,骓,擢"
+    charstring_02 = "丛,焘,丰,职,题,烨,障,掷,转"
+    charstring_03 = "丛,焘,丰,职,题,烨,障,掷,转"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar18huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 18, "火", "")
     Huo_Dict[18] = chinchar18huo
     HuoFullList = HuoFullList + chinchar18huo
 
     # 19画火字
-    # charstring_ori = "薆,摆,爆,蹭,嘲,蛏,歠,骴,哒,裆,邓,鲷,鸫,胴,蹲,齑,际,谲,蹶,帘,臁,蠊,脸,裣,辽,郑,羸,类,离,丽,呖,邻,遴,辚,鲮,馏,咙,撸,庐,氇,蠃,蟆,撵,脓,庞,曝,蹻,烁,谭,韬,鼗,玺,鄩,绎,赠,鄣,辙,骘,鲻"
-    charstring_ori="摆,爆,蹭,际,丽,离,邻,庞,烁,韬,绎,赠"
+    charstring_01 = "薆,摆,爆,蹭,嘲,蛏,歠,骴,哒,裆,邓,鲷,鸫,胴,蹲,齑,际,谲,蹶,帘,臁,蠊,脸,裣,辽,郑,羸,类,离,丽,呖,邻,遴,辚,鲮,馏,咙,撸,庐,氇,蠃,蟆,撵,脓,庞,曝,蹻,烁,谭,韬,鼗,玺,鄩,绎,赠,鄣,辙,骘,鲻"
+    charstring_02 = "摆,爆,蹭,际,丽,离,邻,庞,烁,韬,绎,赠"
+    charstring_03 = "摆,爆,蹭,际,丽,离,邻,庞,烁,韬,绎,赠"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar19huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 19, "火", "")
     Huo_Dict[19] = chinchar19huo
     HuoFullList = HuoFullList + chinchar19huo
 
     # 20画火字
-    # charstring_ori = "宝,阐,郸,党,鲽,窦,嚼,矍,懒,黧,醴,疠,龄,骝,胧,拢,炉,掳,罗,糯,飘,赡,獭,挞,腾,龆,鼍,曦,耀,赢,躅"
-    charstring_ori="宝,龄,拢,炉,飘,腾,耀"
+    charstring_01 = "宝,阐,郸,党,鲽,窦,嚼,矍,懒,黧,醴,疠,龄,骝,胧,拢,炉,掳,罗,糯,飘,赡,獭,挞,腾,龆,鼍,曦,耀,赢,躅"
+    charstring_02 = "宝,龄,拢,炉,飘,腾,耀"
+    charstring_03 = "宝,龄,拢,炉,飘,腾,耀"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar20huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 20, "火", "")
     Huo_Dict[20] = chinchar20huo
     HuoFullList = HuoFullList + chinchar20huo
 
     # 21画火字
-    # charstring_ori = "缠,踌,跻,爝,腊,蜡,癞,斓,览,烂,累,俪,疬,珑,髅,骡,曩,鳎,鲦,鳐,鹞,灶,啭,馔,龇"
-    charstring_ori="火,缠,踌,览,俪,珑"
+    charstring_01 = "缠,踌,跻,爝,腊,蜡,癞,斓,览,烂,累,俪,疬,珑,髅,骡,曩,鳎,鲦,鳐,鹞,灶,啭,馔,龇"
+    charstring_02 = "缠,踌,览,俪,珑"
+    charstring_03 = "缠,踌,览,俪,珑"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar21huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 21, "火", "")
     Huo_Dict[21] = chinchar21huo
     HuoFullList = HuoFullList + chinchar21huo
 
     # 22画火字
-    # charstring_ori = "颤,龊,籴,叠,读,龛,鲢,邋,粝,躐,鹨,聋,癃,窿,胪,舻,孪,囊,摄,赎,傥,饕,听,弯,鹧"
-    charstring_ori = "叠,读,听,弯"
+    charstring_01 = "颤,龊,籴,叠,读,龛,鲢,邋,粝,躐,鹨,聋,癃,窿,胪,舻,孪,囊,摄,赎,傥,饕,听,弯,鹧"
+    charstring_02 = "叠,读,听,弯"
+    charstring_03 = "叠,读,听,弯"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar22huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 22, "火", "")
     Huo_Dict[22] = chinchar22huo
     HuoFullList = HuoFullList + chinchar22huo
 
     # 23画火字
-    # charstring_ori = "雠,恋,鹩,蛎,鳞,麟,轳,挛,栾,猡,猱,摊,体,显"
-    charstring_ori = "恋,麟,栾,休,显"
+    charstring_01 = "鹭,雠,恋,鹩,蛎,鳞,麟,轳,挛,栾,猡,猱,摊,体,显"
+    charstring_02 = "鹭,恋,麟,栾,休,显"
+    charstring_03 = "鹭,恋,麟,栾,休,显"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar23huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 23, "火", "")
     Huo_Dict[23] = chinchar23huo
     HuoFullList = HuoFullList + chinchar23huo
 
     # 24画火字
-    # charstring_ori = "螭,鞑,癫,蠹,攫,雳,谰,鳢,灵,陇,鹭,让,闼,瘫,厅,龌,鳣"
-    charstring_ori="鹭,让,厅"
+    charstring_01 = "螭,鞑,癫,蠹,攫,雳,谰,鳢,灵,陇,让,闼,瘫,龌,鳣"
+    charstring_02 = "让"
+    charstring_03 = "让"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar24huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 24, "火", "")
     Huo_Dict[24] = chinchar24huo
     HuoFullList = HuoFullList + chinchar24huo
 
     # 25画火字
-    # charstring_ori = "叆,纛,揽,鬣,酃,颅,脔,摞,囔"
-    charstring_ori="揽"
+    charstring_01 = "叆,纛,揽,鬣,酃,颅,脔,摞,厅,囔"
+    charstring_02 = "揽"
+    charstring_03 = "揽"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar25huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 25, "火", "")
     Huo_Dict[25] = chinchar25huo
     HuoFullList = HuoFullList + chinchar25huo
 
     # 26画火字
-    # charstring_ori = "叆,纛,揽,鬣,酃,颅,脔,摞,囔"
-    charstring_ori = "逻,郦,邐"
+    charstring_01 = "叆,纛,揽,鬣,酃,颅,脔,摞,囔"
+    charstring_02 = "逻,郦,邐"
+    charstring_03 = "逻,郦,邐"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar26huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 26, "火", "")
     Huo_Dict[26] = chinchar26huo
     HuoFullList = HuoFullList + chinchar26huo
 
     # 27画火字
-    # charstring_ori = "叆,纛,揽,鬣,酃,颅,脔,摞,囔"
-    charstring_ori = "骧"
+    charstring_01 = "叆,纛,鬣,酃,颅,脔,摞,囔"
+    charstring_02 = "骧"
+    charstring_03 = "骧"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar27huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 27, "火", "")
     Huo_Dict[27] = chinchar27huo
     HuoFullList = HuoFullList + chinchar27huo
 
     # 28画火字
-    # charstring_ori = "叆,纛,揽,鬣,酃,颅,脔,摞,囔"
-    charstring_ori = "鹦"
+    charstring_01 = "叆,纛,揽,鬣,酃,颅,脔,摞,囔"
+    charstring_02 = "鹦"
+    charstring_03 = "鹦"
+    charstring_04 = ""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar28huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 28, "火", "")
     Huo_Dict[28] = chinchar28huo
