@@ -49,7 +49,7 @@ def GetNameByGood81(namelist):
 
     return Myname
 
-
+# 二字五行取名
 # 木木名
 def GetName_MuMU():
     print("--------- 木木组合名字 ---------")
@@ -79,8 +79,8 @@ def GetName_HuoMu():
     NamelistByHuoMuBy81 = GetNameByGood81(NamelistByHuoMu)
     print("火木组合共：" + str(len(NamelistByHuoMu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByHuoMuBy81)) + "个")
     # # 顺序打印符合81数理的木木名字组合，每行50个
-    # for i in NamelistByMHuoMuBy81:
-    #     if (NamelistByMHuoMuBy81.index(i) + 1) % 50 != 0:
+    # for i in NamelistByHuoMuBy81:
+    #     if (NamelistByHuoMuBy81.index(i) + 1) % 50 != 0:
     #         print(i.givenname + ",", end="")
     #     else:
     #         print(i.givenname)
@@ -93,47 +93,71 @@ def GetName_MuHuo():
     NamelistByMuHuoBy81 = GetNameByGood81(NamelistByMuHuo)
     print("木火组合共：" + str(len(NamelistByMuHuo)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMuHuoBy81)) + "个")
     # # 顺序打印符合81数理的木木名字组合，每行50个
-    # for i in NamelistByMHuoMuBy81:
-    #     if (NamelistByMHuoMuBy81.index(i) + 1) % 50 != 0:
+    # for i in NamelistByMuHuoBy81:
+    #     if (NamelistByMuHuoBy81.index(i) + 1) % 50 != 0:
+    #         print(i.givenname + ",", end="")
+    #     else:
+    #         print(i.givenname)
+# 火土名
+def GetName_HuoTu():
+    print("--------- 火土组合名字 ---------")
+
+    NamelistByHuoTu = GetNameByChar(Huo_Set.fulllist, Tu_Set.fulllist)
+    # print()
+    NamelistByHuoTuBy81 = GetNameByGood81(NamelistByHuoTu)
+    print("火土组合共：" + str(len(NamelistByHuoTu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByHuoTuBy81)) + "个")
+    # # 顺序打印名字组合，每行50个
+    # for i in NamelistByHuoTuBy81:
+    #     if (NamelistByHuoTuBy81.index(i) + 1) % 50 != 0:
+    #         print(i.givenname + ",", end="")
+    #     else:
+    #         print(i.givenname)
+# 土火名
+def GetName_TuHuo():
+    print("--------- 土火组合名字 ---------")
+    NamelistByTuHuo = GetNameByChar(Tu_Set.fulllist, Huo_Set.fulllist)
+    # print()
+    NamelistByTuHuoBy81 = GetNameByGood81(NamelistByTuHuo)
+    print("土火组合共：" + str(len(NamelistByTuHuo)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByTuHuoBy81)) + "个")
+    # # 顺序打印名字组合，每行50个
+    # for i in NamelistByTuHuoBy81:
+    #     if (NamelistByTuHuoBy81.index(i) + 1) % 50 != 0:
+    #         print(i.givenname + ",", end="")
+    #     else:
+    #         print(i.givenname)
+# 土土名
+def GetName_TuTu():
+    print("--------- 土土组合名字 ---------")
+
+    NamelistByTuTu = GetNameByChar(Tu_Set.fulllist, Tu_Set.fulllist)
+    # print()
+    NamelistByTuTuBy81 = GetNameByGood81(NamelistByTuTu)
+    print("土土组合共：" + str(len(NamelistByTuTu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByTuTuBy81)) + "个")
+    # # 顺序打印名字组合，每行50个
+    # for i in NamelistByTuTuBy81:
+    #     if (NamelistByTuTuBy81.index(i) + 1) % 50 != 0:
     #         print(i.givenname + ",", end="")
     #     else:
     #         print(i.givenname)
 
 
 
+
 GetName_MuMU()
 GetName_HuoMu()
 GetName_MuHuo()
+GetName_HuoTu()
+GetName_TuHuo()
+GetName_TuTu()
 
 
 
 
 
-# print("--------- 火土组合名字 ---------")
-#
-# NamelistByHuoTu= GetNameByWuxing(Huo_Set.fulllist,Tu_Set.fulllist)
-# # print()
-# NamelistByHuoTuBy81=GetNameByGood81(NamelistByHuoTu)
-# print("火土组合共：" + str(len(NamelistByHuoTu)) + "个，"+"其中符合81数理名字：" + str(len(NamelistByHuoTuBy81)) + "个")
-# # 顺序打印名字组合，每行50个
-# for i in NamelistByHuoTu:
-#     if (NamelistByHuoTu.index(i)+1) % 50 != 0:
-#         print(i.givenname+",",end="")
-#     else:
-#         print(i.givenname)
 
 
 
 
 
-# print("--------- 土火组合名字 ---------")
-# NamelistByTuHuo= GetNameByWuxing(Tu_Set.fulllist,Huo_Set.fulllist)
-# # print()
-# NamelistByTuHuoBy81=GetNameByGood81(NamelistByTuHuo)
-# print("土火组合共：" + str(len(NamelistByTuHuo)) + "个，"+"其中符合81数理名字：" + str(len(NamelistByTuHuoBy81)) + "个")
-# # 顺序打印名字组合，每行50个
-# for i in NamelistByTuHuo:
-#     if (NamelistByTuHuo.index(i)+1) % 50 != 0:
-#         print(i.givenname+",",end="")
-#     else:
-#         print(i.givenname)
+
+
