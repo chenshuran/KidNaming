@@ -24,15 +24,15 @@ print("火属性字："+str(len(Huo_Set.fulllist)))
 print("土属性字："+str(len(Tu_Set.fulllist)))
 
 print()
-# 根据名字二字的五行排列，得出名字集
-def GetNameByWuxing(fulllist1,fulllist2):
+# 根据名字二字的五行排列，得出名字。
+def GetNameByChar(Charfulllist1, Charfulllist2):
     # ChineseName类队列
     Namelist=list()
 
-    FullList1=fulllist1
-    FullList2=fulllist2
-    for i in fulllist1:
-        for j in fulllist2:
+    FullList1=Charfulllist1
+    FullList2=Charfulllist2
+    for i in Charfulllist1:
+        for j in Charfulllist2:
             # 创建名字类例
             Myname = Mylib.ChineseName()
             Myname.Setinfo(i.zi,i.bihua,i.wuxing,"",j.zi,j.bihua,j.wuxing,"")
@@ -40,20 +40,21 @@ def GetNameByWuxing(fulllist1,fulllist2):
     #         print(Myname.givenname,end="")
     # print(str(len(Namelist)))
     return Namelist
-
 # 根据81数理吉凶得出吉利名字
-def GetNameByGood81(list):
+def GetNameByGood81(namelist):
     Myname=[]
-    for i in list:
+    for i in namelist:
         if i.zongbihua in Goodfrom81:
            Myname.append(i)
 
     return Myname
 
+
+# 木木名
 def GetName_MuMU():
     print("--------- 木木组合名字 ---------")
 
-    NamelistByMuMu = GetNameByWuxing(Mu_Set.fulllist, Mu_Set.fulllist)
+    NamelistByMuMu = GetNameByChar(Mu_Set.fulllist, Mu_Set.fulllist)
     # print()
     NamelistByMuMuBy81 = GetNameByGood81(NamelistByMuMu)
     print("木木组合共：" + str(len(NamelistByMuMu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMuMuBy81)) + "个")
@@ -70,8 +71,23 @@ def GetName_MuMU():
     #     else:
     #         print(i.givenname)
 
+def GetName_HuoMu():
+    print("--------- 火木组合名字 ---------")
+
+    NamelistByHuoMu = GetNameByChar(Huo_Set.fulllist, Mu_Set.fulllist)
+    # print()
+    NamelistByMHuoMuBy81 = GetNameByGood81(NamelistByHuoMu)
+    print("火木组合共：" + str(len(NamelistByHuoMu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMHuoMuBy81)) + "个")
+    # # 顺序打印符合81数理的木木名字组合，每行50个
+    # for i in NamelistByMHuoMuBy81:
+    #     if (NamelistByMHuoMuBy81.index(i) + 1) % 50 != 0:
+    #         print(i.givenname + ",", end="")
+    #     else:
+    #         print(i.givenname)
+
 
 GetName_MuMU()
+GetName_HuoMu()
 
 
 
