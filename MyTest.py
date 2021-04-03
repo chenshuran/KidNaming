@@ -1008,7 +1008,7 @@ print("火属性字："+str(len(Huo_Set.fulllist)))
 print("土属性字："+str(len(Tu_Set.fulllist)))
 
 print()
-# 根据名五行顺序得出名字集
+# 根据名字二字的五行排列，得出名字集
 def GetNameByWuxing(fulllist1,fulllist2):
     # ChineseName类队列
     Namelist=list()
@@ -1033,6 +1033,31 @@ def GetNameByGood81(list):
            Myname.append(i)
 
     return Myname
+
+def GetName_MuMU():
+    print("--------- 木木组合名字 ---------")
+
+    NamelistByMuMu = GetNameByWuxing(Mu_Set.fulllist, Mu_Set.fulllist)
+    # print()
+    NamelistByMuMuBy81 = GetNameByGood81(NamelistByMuMu)
+    print("木木组合共：" + str(len(NamelistByMuMu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMuMuBy81)) + "个")
+    # 顺序打印符合81数理的木木名字组合，每行50个
+    # for i in NamelistByMuMuBy81:
+    #     if (NamelistByMuMuBy81.index(i) + 1) % 50 != 0:
+    #         print(i.givenname + ",", end="")
+    #     else:
+    #         print(i.givenname)
+    # # 顺序打印全部木木名字组合，每行50个
+    # for i in NamelistByMuMu:
+    #     if (NamelistByMuMu.index(i)+1) % 50 != 0:
+    #         print(i.givenname+",",end="")
+    #     else:
+    #         print(i.givenname)
+
+
+GetName_MuMU()
+
+
 
 
 
