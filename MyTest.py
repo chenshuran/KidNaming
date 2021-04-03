@@ -70,14 +70,28 @@ def GetName_MuMU():
     #         print(i.givenname+",",end="")
     #     else:
     #         print(i.givenname)
-
+# 火木名
 def GetName_HuoMu():
     print("--------- 火木组合名字 ---------")
 
     NamelistByHuoMu = GetNameByChar(Huo_Set.fulllist, Mu_Set.fulllist)
     # print()
-    NamelistByMHuoMuBy81 = GetNameByGood81(NamelistByHuoMu)
-    print("火木组合共：" + str(len(NamelistByHuoMu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMHuoMuBy81)) + "个")
+    NamelistByHuoMuBy81 = GetNameByGood81(NamelistByHuoMu)
+    print("火木组合共：" + str(len(NamelistByHuoMu)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByHuoMuBy81)) + "个")
+    # # 顺序打印符合81数理的木木名字组合，每行50个
+    # for i in NamelistByMHuoMuBy81:
+    #     if (NamelistByMHuoMuBy81.index(i) + 1) % 50 != 0:
+    #         print(i.givenname + ",", end="")
+    #     else:
+    #         print(i.givenname)
+# 木火名
+def GetName_MuHuo():
+    print("--------- 木火组合名字 ---------")
+
+    NamelistByMuHuo = GetNameByChar(Mu_Set.fulllist,Huo_Set.fulllist)
+    # print()
+    NamelistByMuHuoBy81 = GetNameByGood81(NamelistByMuHuo)
+    print("木火组合共：" + str(len(NamelistByMuHuo)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMuHuoBy81)) + "个")
     # # 顺序打印符合81数理的木木名字组合，每行50个
     # for i in NamelistByMHuoMuBy81:
     #     if (NamelistByMHuoMuBy81.index(i) + 1) % 50 != 0:
@@ -86,8 +100,10 @@ def GetName_HuoMu():
     #         print(i.givenname)
 
 
+
 GetName_MuMU()
 GetName_HuoMu()
+GetName_MuHuo()
 
 
 
