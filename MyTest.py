@@ -5,13 +5,19 @@ import random
 #数理81吉祥数
 Goodfrom81=[1,3,5,6,7,11,13,15,16,21,23,24,29,31,32,33,35,37,41,45,47,48,52,57,61,63,65,67,68,81]
 
-CharsetNum=0
-
-def getcharstringbynum(num,string01,string02,string03):
+# 字集编号
+# 1父亲初始字符集，大而全
+# 2父亲03.26精简字符集
+# 3父亲03.31精简字符集
+# 4我的字符集
+CharsetNum=1
+# 根据编号选取一套字集
+def getcharstringbynum(num,string01,string02,string03,string04):
     numbers = {
         1 : string01,
         2 : string02,
-        3 : string03
+        3 : string03,
+        4 : string04
     }
     return numbers.get(num, "无")
 
@@ -210,20 +216,27 @@ def InitHuoData(ChineseCharSet_Huo):
     # region 火字初始化
     Huo_Dict = {}
     HuoFullList = list()
-    # 2画火字
-    charstring_01="刁,丁,二,力,了"
-    charstring_02="刁,丁,二,力,了"
-    charstring_03="刁,丁,二,力,了"
 
-    # charstring_ori = "刁,丁,二,力,了"
+    # # 2画火字
+    # charstring_01="刁,丁,二,力,了"
+    # charstring_02="刁,丁,二,力,了"
+    # charstring_03=""
+    # charstring_04=""
+    # charstring_ori=getcharstringbynum(CharsetNum,charstring_01,charstring_02,charstring_03,charstring_04)
+    #
     # charstring_tmp = Mylib.charStrtolist(charstring_ori)
     # chinchar2huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 2, "火", "")
     # Huo_Dict[2] = chinchar2huo
     # HuoFullList = HuoFullList + chinchar2huo
 
     # 3画火字
-    # charstring_ori = "彳,大,孓,女,勺,巳,乇,幺,弋,丈"
-    charstring_ori = "大,勺"
+    charstring_01="彳,大,孓,女,勺,巳,乇,幺,弋,丈"
+    charstring_02="大,勺"
+    charstring_03 = "大,勺"
+    charstring_04=""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03,charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar3huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 3, "火", "")
     Huo_Dict[3] = chinchar3huo
@@ -231,10 +244,13 @@ def InitHuoData(ChineseCharSet_Huo):
 
     # 4画火字
     # line1-原始集 / line2-3.26简化集合 / line3-3.31 简化集合 / lin4-抒然简化集合
-    # charstring_ori = "尺,丹,吊,仃,斗,火,井,支,仂,内,日,太,天,屯,午,爻,仉,止,中,之"
-    # charstring_ori = "尺,丹,仃,斗,火,支,内,太,天,止,中,之"
-    charstring_ori = "尺,丹,仃,斗,火,支,内,太,天,止,中,之"
-    # charstring_ori = "尺,丹,井,支,内,日,太,天,午,止,中,之"
+    charstring_01 = "尺,丹,吊,仃,斗,火,井,支,仂,内,日,太,天,屯,午,爻,仉,止,中,之"
+    charstring_02 = "尺,丹,仃,斗,火,支,内,太,天,止,中,之"
+    charstring_03 = "尺,丹,仃,斗,火,支,内,太,天,止,中,之"
+    charstring_04=""
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
     charstring_tmp = Mylib.charStrtolist(charstring_ori)
     chinchar4huo = Mylib.GetChineseCharlist(charstring_tmp, list(), 4, "火", "")
     Huo_Dict[4] = chinchar4huo
