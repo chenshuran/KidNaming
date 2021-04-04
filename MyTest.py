@@ -61,7 +61,7 @@ def GetNameByRengeFromGood81(namelist):
 def GetNameByDigeFromGood81(namelist):
     Myname = []
     for i in namelist:
-        if i.renge in Goodfrom81:
+        if i.dige in Goodfrom81:
             Myname.append(i)
 
     return Myname
@@ -85,34 +85,27 @@ def GetName_MuMU():
     namelistfull = GetNameByChar(Mu_Set.fulllist, Mu_Set.fulllist)
     print("木木组合共：" + str(len(namelistfull)) + "个，其中")
     namelist_renge_by81=GetNameByRengeFromGood81(namelistfull)
-    print("人格符合81数理名字：" + str(len(namelist_renge_by81)) + "个")
-    # 打印，每行x个
-    for i in namelist_renge_by81:
-        if (namelist_renge_by81.index(i) + 1) % 10 != 0:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "),", end="")
-        else:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "),")
-
-
     namelist_dige_by81=GetNameByDigeFromGood81(namelist_renge_by81)
     namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
-    namelist_sancai=GetNameBySancai(namelist_zongge_by81)
-
-
-
-    # print("木木组合共：" + str(len(namelistfull)) + "个，其中：")
-    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
-    #
+    print("人格，地格，总格均符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
     # # 打印，每行x个
-    # for i in namelist_sancai:
-    #     if (namelist_sancai.index(i) + 1) % 10 != 0:
-    #         print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),", end="")
+    # for i in namelist_zongge_by81:
+    #     if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
+    #         print(
+    #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "),", end="")
     #     else:
-    #         print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),")
+    #         print(
+    #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "),")
 
 
+    namelist_sancai=GetNameBySancai(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
+    # 打印，每行x个
+    for i in namelist_sancai:
+        if (namelist_sancai.index(i) + 1) % 10 != 0:
+            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),", end="")
+        else:
+            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),")
 
 # 火木名
 def GetName_HuoMu():
@@ -120,17 +113,13 @@ def GetName_HuoMu():
 
     namelistfull = GetNameByChar(Huo_Set.fulllist, Mu_Set.fulllist)
     print("火木组合共：" + str(len(namelistfull)) + "个，其中")
-    namelist_renge_by81 = GetNameByZonggeFromGood81(namelistfull)
-
-
-
+    namelist_renge_by81 = GetNameByRengeFromGood81(namelistfull)
     namelist_dige_by81 = GetNameByDigeFromGood81(namelist_renge_by81)
     namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
-    print("五格符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
-    namelist_sancai = GetNameBySancai(namelist_zongge_by81)
-    # print("三才配置后还剩：" + str(len(namelist_sancai)) + "个")
-    print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
+    print("人格，地格，总格均符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
 
+    namelist_sancai = GetNameBySancai(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
     # 打印，每行x个
     for i in namelist_sancai:
         if (namelist_sancai.index(i) + 1) % 10 != 0:
@@ -143,16 +132,33 @@ def GetName_HuoMu():
 def GetName_MuHuo():
     print("--------- 木火组合名字 ---------")
 
-    NamelistByMuHuo = GetNameByChar(Mu_Set.fulllist,Huo_Set.fulllist)
-    # print()
-    NamelistByMuHuoBy81 = GetNameByZonggeFromGood81(NamelistByMuHuo)
-    print("木火组合共：" + str(len(NamelistByMuHuo)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMuHuoBy81)) + "个")
-    # 顺序打印符合81数理的木木名字组合，每行50个
-    for i in NamelistByMuHuoBy81:
-        if (NamelistByMuHuoBy81.index(i) + 1) % 50 != 0:
-            print(i.givenname + ",", end="")
+    namelistfull = GetNameByChar(Mu_Set.fulllist,Huo_Set.fulllist)
+    print("木火组合共：" + str(len(namelistfull)) + "个，其中")
+    namelist_renge_by81 = GetNameByRengeFromGood81(namelistfull)
+    namelist_dige_by81 = GetNameByDigeFromGood81(namelist_renge_by81)
+    namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
+    print("五格符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
+    namelist_sancai = GetNameBySancai(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
+    # 打印，每行x个
+    for i in namelist_sancai:
+        if (namelist_sancai.index(i) + 1) % 10 != 0:
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
         else:
-            print(i.givenname)
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
+
+    # NamelistByMuHuoBy81 = GetNameByZonggeFromGood81(NamelistByMuHuo)
+    # print("木火组合共：" + str(len(NamelistByMuHuo)) + "个，" + "其中符合81数理名字：" + str(len(NamelistByMuHuoBy81)) + "个")
+    # # 顺序打印符合81数理的木木名字组合，每行50个
+    # for i in NamelistByMuHuoBy81:
+    #     if (NamelistByMuHuoBy81.index(i) + 1) % 50 != 0:
+    #         print(i.givenname + ",", end="")
+    #     else:
+    #         print(i.givenname)
 # 火土名
 def GetName_HuoTu():
     print("--------- 火土组合名字 ---------")
