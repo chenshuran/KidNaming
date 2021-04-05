@@ -99,22 +99,26 @@ def GetName_MuMU():
     namelist_dige_by81=GetNameByDigeFromGood81(namelist_renge_by81)
     namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
     print("人格，地格，总格均符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
-    # 打印，每行x个
-    for i in namelist_zongge_by81:
-        if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
-            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),", end="")
-        else:
-            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),")
-
-
-    # namelist_sancai=GetNameBySancai(namelist_zongge_by81)
-    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
     # # 打印，每行x个
-    # for i in namelist_sancai:
-    #     if (namelist_sancai.index(i) + 1) % 10 != 0:
+    # for i in namelist_zongge_by81:
+    #     if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
     #         print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),", end="")
     #     else:
     #         print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),")
+
+
+    # 第一种取三才方法
+    # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
+    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
+    # 第二种取三才方法
+    namelist_sancai = GetNameBySancai_extend(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置参考第二种方法合理)：" + str(len(namelist_sancai)) + "个")
+    # 打印，每行x个
+    for i in namelist_sancai:
+        if (namelist_sancai.index(i) + 1) % 10 != 0:
+            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),", end="")
+        else:
+            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),")
 
 # 火木名
 def GetName_HuoMu():
@@ -126,25 +130,29 @@ def GetName_HuoMu():
     namelist_dige_by81 = GetNameByDigeFromGood81(namelist_renge_by81)
     namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
     print("人格，地格，总格均符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
-    # 打印，每行x个
-    for i in namelist_zongge_by81:
-        if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
-        else:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
+    # # 打印，每行x个
+    # for i in namelist_zongge_by81:
+    #     if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
+    #         print(
+    #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+    #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
+    #     else:
+    #         print(
+    #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+    #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
 
+    # 第一种取三才方法
     # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
     # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
-    # # 打印，每行x个
-    # for i in namelist_sancai:
-    #     if (namelist_sancai.index(i) + 1) % 10 != 0:
-    #         print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),", end="")
-    #     else:
-    #         print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),")
+    # 第二种取三才方法
+    namelist_sancai = GetNameBySancai_extend(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置参考第二种方法合理)：" + str(len(namelist_sancai)) + "个")
+    # 打印，每行x个
+    for i in namelist_sancai:
+        if (namelist_sancai.index(i) + 1) % 10 != 0:
+            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),", end="")
+        else:
+            print("【"+i.givenname+"】" +"("+str(i.bihua1)+"/"+str(i.bihua2)+",人"+str(i.renge)+"/地"+str(i.dige)+"/总"+str(i.zongge)+",三才"+i.sancai+"),")
 
 # 木火名
 def GetName_MuHuo():
@@ -156,22 +164,9 @@ def GetName_MuHuo():
     namelist_dige_by81 = GetNameByDigeFromGood81(namelist_renge_by81)
     namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
     print("人格，地格，总格均符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
-    # 打印，每行x个
-    for i in namelist_zongge_by81:
-        if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
-        else:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
-
-    # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
-    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
     # # 打印，每行x个
-    # for i in namelist_sancai:
-    #     if (namelist_sancai.index(i) + 1) % 10 != 0:
+    # for i in namelist_zongge_by81:
+    #     if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
     #         print(
     #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
     #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
@@ -179,6 +174,23 @@ def GetName_MuHuo():
     #         print(
     #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
     #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
+
+    # 第一种取三才方法
+    # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
+    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
+    # 第二种取三才方法
+    namelist_sancai = GetNameBySancai_extend(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置参考第二种方法合理)：" + str(len(namelist_sancai)) + "个")
+    # 打印，每行x个
+    for i in namelist_sancai:
+        if (namelist_sancai.index(i) + 1) % 10 != 0:
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
+        else:
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
 
 # 火土名
 def GetName_HuoTu():
@@ -190,22 +202,9 @@ def GetName_HuoTu():
     namelist_dige_by81 = GetNameByDigeFromGood81(namelist_renge_by81)
     namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
     print("人格，地格，总格均符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
-    # 打印，每行x个
-    for i in namelist_zongge_by81:
-        if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
-        else:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
-
-    # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
-    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
     # # 打印，每行x个
-    # for i in namelist_sancai:
-    #     if (namelist_sancai.index(i) + 1) % 10 != 0:
+    # for i in namelist_zongge_by81:
+    #     if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
     #         print(
     #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
     #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
@@ -213,6 +212,23 @@ def GetName_HuoTu():
     #         print(
     #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
     #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
+
+    # 第一种取三才方法
+    # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
+    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
+    # 第二种取三才方法
+    namelist_sancai = GetNameBySancai_extend(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置参考第二种方法合理)：" + str(len(namelist_sancai)) + "个")
+    # 打印，每行x个
+    for i in namelist_sancai:
+        if (namelist_sancai.index(i) + 1) % 10 != 0:
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
+        else:
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
 
 # 土火名
 def GetName_TuHuo():
@@ -223,22 +239,9 @@ def GetName_TuHuo():
     namelist_dige_by81 = GetNameByDigeFromGood81(namelist_renge_by81)
     namelist_zongge_by81 = GetNameByZonggeFromGood81(namelist_dige_by81)
     print("人格，地格，总格均符合81数理名字：" + str(len(namelist_zongge_by81)) + "个")
-    # 打印，每行x个
-    for i in namelist_zongge_by81:
-        if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
-        else:
-            print(
-                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
-                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
-
-    # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
-    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
     # # 打印，每行x个
-    # for i in namelist_sancai:
-    #     if (namelist_sancai.index(i) + 1) % 10 != 0:
+    # for i in namelist_zongge_by81:
+    #     if (namelist_zongge_by81.index(i) + 1) % 10 != 0:
     #         print(
     #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
     #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
@@ -246,6 +249,23 @@ def GetName_TuHuo():
     #         print(
     #             "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
     #                 i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
+
+    # 第一种取三才方法
+    # namelist_sancai = GetNameBySancai(namelist_zongge_by81)
+    # print("人格，地格，总格均符合81数理名字，且三才配置7/(5,6)/(3,4)：" + str(len(namelist_sancai)) + "个")
+    # 第二种取三才方法
+    namelist_sancai = GetNameBySancai_extend(namelist_zongge_by81)
+    print("人格，地格，总格均符合81数理名字，且三才配置参考第二种方法合理)：" + str(len(namelist_sancai)) + "个")
+    # 打印，每行x个
+    for i in namelist_sancai:
+        if (namelist_sancai.index(i) + 1) % 10 != 0:
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),", end="")
+        else:
+            print(
+                "【" + i.givenname + "】" + "(" + str(i.bihua1) + "/" + str(i.bihua2) + ",人" + str(i.renge) + "/地" + str(
+                    i.dige) + "/总" + str(i.zongge) + ",三才" + i.sancai + "),")
 
 # 土土名
 def GetName_TuTu():
