@@ -365,7 +365,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01="彳,大,孓,女,勺,巳,乇,幺,弋,丈"
     charstring_02="大,勺"
     charstring_03 = "大,勺"
-    charstring_04="大,勺"
+    charstring_04="大"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03,charstring_04)
 
@@ -379,7 +379,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "尺,丹,吊,仃,斗,火,井,支,仂,内,日,太,天,屯,午,爻,仉,止,中,之"
     charstring_02 = "尺,丹,仃,斗,火,支,内,太,天,止,中,之"
     charstring_03 = "尺,丹,仃,斗,火,支,内,太,天,止,中,之"
-    charstring_04="尺,丹,吊,仃,斗,火,支,内,太,天,午,止,中,之"
+    charstring_04="尺,丹,斗,火,支,内,太,天,午,中,之"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -392,7 +392,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "丙,代,旦,叨,氐,叮,冬,叻,立,尥,令,另,奶,尼,奴,冉,他,它,田,仝,仗,召,只,左"
     charstring_02 = "代,旦,叮,冬,立,令,另,冉,田,仗,召,左"
     charstring_03 = "代,旦,叮,冬,立,令,另,冉,田,仗,召,左"
-    charstring_04 = "代,旦,叨,冬,立,令,另,冉,田,仗,召,左"
+    charstring_04 = "代,旦,冬,立,令,另,冉,田,召,左,台"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -418,7 +418,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "犴,呈,辵,呔,甙,但,低,弟,佃,甸,玎,疔,盯,豆,囤,旰,灸,良,牢,李,利,吝,伶,吕,卵,免,男,呐,佞,弄,努,求,忐,忑,町,廷,佟,彤,吞,托,佗,妥,巫,妖,佁,佔,志,豸,住,灼,姊,足"
     charstring_02 = "良,利,伶,免,努,求,廷,彤,托,妥,佔,志,住,灼,足"
     charstring_03 = "良,利,伶,免,努,求,廷,彤,托,妥,佔,志,住,灼,足"
-    charstring_04 = "呈,良,李,利,伶,吕,男,努,求,廷,彤,托,佗,妥,志,住,灼,足"
+    charstring_04 = "采,呈,良,李,利,伶,吕,男,努,廷,托,志,住,灼,足"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -431,7 +431,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "哎,佰,长,炒,坼,侈,炊,佽,徂,耷,妲,沓,岱,宕,到,的,狄,底,玓,典,店,耵,定,咚,侗,抖,妒,咄,剁,佴,昉,炅,昊,戽,姐,咎,抉,炕,两,争,政,知,直,昆,剌,来,佬,肋,例,戾,冽,囹,呤,侣,仑,旻,奈,呶,妮,念,弩,疟,妾,炔,乳,侍,帑,弢,忝,佻,帖,投,罔,昕,炎,佯,易,找,制,帙,炙,忠,隹,卓"
     charstring_02 = "佰,长,狄,底,宕,到,典,定,抖,炅,昊,攸,争,枕,知,直,昆,炎,易,制,忠,佳,卓"
     charstring_03 = "佰,长,狄,底,宕,到,典,定,抖,炅,昊,攸,争,枕,知,直,昆,炎,易,制,忠,佳,卓"
-    charstring_04 = "佰,长,岱,狄,底,宕,到,典,定,抖,炅,昊,攸,争,政,知,直,昆,来,仑,旻,念,昕,炎,易,制,忠,卓"
+    charstring_04 = "彤,佰,长,岱,狄,两,底,到,典,定,炅,昊,攸,弢,争,政,知,直,昆,来,仑,旻,念,昕,炎,易,制,忠,卓"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -509,7 +509,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "熬,畅,尘,逞,瞅,绰,瘩,捣,嘀,嫡,递,腚,胨,郖,逗,端,对,裰,夺,尔,裹,伙,奖,尽,恺,奁,连,踉,僚,寥,廖,瘌,辣,罱,郎,嫪,嫘,酹,嘞,嫠,粼,绫,领,熘,绺,喽,陋,绿,纶,裸,雒,瑙,嫩,宁,喏,搦,炝,熔,煽,裳,台,态,叹,搪,耥,趟,慆,慝,滕,逖,惕,裼,舔,蜩,通,透,图,团,箨,蜿,绾,腕,诶,鞅,疡,摇,荧,毓,搌,绽,嫜,彰,胀,幛,赵,这,祯,种,逐,缀,缁"
     charstring_02 = "畅,尘,逞,瞅,绰,端,尔,伙,连,僚,寥,郎,领,缘,宁,熔,煽,裳,台,态,搪,趟,通鞅,荧,绽,彰,种,逐"
     charstring_03 = "畅,尘,逞,瞅,绰,端,尔,伙,连,僚,寥,郎,领,缘,宁,熔,煽,裳,台,态,搪,趟,通,鞅,荧,绽,彰,种,逐"
-    charstring_04 = "畅,尘,绰,端,尔,伙,恺,连,寥,郎,领,绿,宁,熔,裳,台,态,滕,通,透,图,鞅,荧,毓,绽,彰,赵,逐"
+    charstring_04 = "畅,尘,绰,端,尔,伙,恺,连,寥,郎,领,绿,宁,熔,裳,态,滕,通,透,图,鞅,荧,毓,绽,彰,赵,逐"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
