@@ -710,6 +710,32 @@ def InitTuData(ChineseCharSet_Tu):
     TuFullList = list()
     # region 土字初始化
 
+    # 1画土字
+    # charstring_01 = "己,山,土,丸,兀,丫,也,尢,于"
+    # charstring_02 = "土,己,于"
+    # charstring_03 = "土,己,于"
+    charstring_04 = "一"
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
+    charstring_tmp = Mylib.charStrtolist(charstring_ori)
+    chinchar1tu = Mylib.GetChineseCharlist(charstring_tmp, list(), 1, "土", "")
+    Tu_Dict[1] = chinchar1tu
+    TuFullList = TuFullList + chinchar1tu
+
+    # 2画土字
+    # charstring_01 = "己,山,土,丸,兀,丫,也,尢,于"
+    # charstring_02 = "土,己,于"
+    # charstring_03 = "土,己,于"
+    charstring_04 = "又"
+
+    charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
+
+    charstring_tmp = Mylib.charStrtolist(charstring_ori)
+    chinchar2tu = Mylib.GetChineseCharlist(charstring_tmp, list(), 2, "土", "")
+    Tu_Dict[2] = chinchar2tu
+    TuFullList = TuFullList + chinchar2tu
+
     # 3画土字
     charstring_01 = "己,山,土,丸,兀,丫,也,尢,于"
     charstring_02 = "土,己,于"
