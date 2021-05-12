@@ -600,7 +600,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "缠,踌,跻,爝,腊,蜡,癞,斓,览,烂,累,俪,疬,珑,髅,骡,曩,鳎,鲦,鳐,鹞,灶,啭,馔,龇"
     charstring_02 = "缠,踌,览,俪,珑"
     charstring_03 = "缠,踌,览,俪,珑"
-    charstring_04 = "览,俪,珑"
+    charstring_04 = "俪,珑"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -613,7 +613,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "颤,龊,籴,叠,读,龛,鲢,邋,粝,躐,鹨,聋,癃,窿,胪,舻,孪,囊,摄,赎,傥,饕,听,弯,鹧"
     charstring_02 = "叠,读,听,弯"
     charstring_03 = "叠,读,听,弯"
-    charstring_04 = "叠,读,听"
+    charstring_04 = "览,叠,读,听"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
