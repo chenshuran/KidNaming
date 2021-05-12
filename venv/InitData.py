@@ -457,7 +457,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "玳,耽,疸,紞,岛,倒,娣,玷,爹,瓞,冻,恫,蚪,趸,耿,烘,恍,疾,晋,珏,倔,烤,俩,凉,畜,烜,朕,肢,值,朗,烙,哩,娌,料,烈,玲,瓴,凌,留,旅,伦,倮,耄,拿,纳,肭,衲,孬,能,娘,恧,衄,哦,秦,恁,朊,芮,蚋,偌,晒,晌,恕,朔,趿,肽,唐,倘,讨,套,特,疼,屉,倜,恬,甜,挑,条,庭,挺,徒,彖,庹,挖,挝,倭,乌,娭,夏,讯,迅,秧,烊,窈,舀,旃,展,站,珍,秩,舯,衷,冢,祝,倬,笫,恣,哲"
     charstring_02=  "耿,恍,晋,倔,值,玲,凌,留,旅,伦,能,芮,特,恬,庭,挺,夏,讯,迅,秧,哲"
     charstring_03 = "耿,恍,晋,倔,值,玲,凌,留,旅,伦,能,芮,特,恬,庭,挺,夏,讯,迅,秧,哲"
-    charstring_04 = "娜,耿,晋,值,烈,玲,凌,留,旅,伦,纳,秦,芮,朔,唐,恬,庭,夏,讯,迅,秧,展,珍,祝,哲"
+    charstring_04 = "娜,耿,晋,值,烈,玲,凌,留,旅,伦,纳,秦,芮,朔,唐,恬,庭,夏,讯,迅,秧,展,珍,祝,哲,晃"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -470,7 +470,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "欸,捭,蛃,晡,眵,敕,从,凑,绐,带,袋,聃,胆,啖,蛋,盗,羝,顶,啶,动,敚,舵,阨,珥,烽,晗,焓,焊,斛,将,狷,诀,觖,梁,聊,振,执,徕,狼,勒,梨,狸,猁,唳,粒,羚,翎,聆,蛉,娄,卤,鹿,略,囵,捋,珞,那,婥,讷,您,胬,戚,软,晟,胎,酞,贪,袒,啕,剔,悌,粜,烃,停,珽,屠,豚,唾,娲,袜,烷,挽,焐,晞,烯,珣,珧,斩,张,章,帐,啁,侦,痔,窒,舳,捉,啄,眦,偬"
     charstring_02 = "从,凑,给,带,袋,顶,舵,烽,振,聊,执"
     charstring_03 = "从,凑,给,带,袋,顶,舵,烽,振,聊,执"
-    charstring_04 = "朗,从,凑,给,带,袋,胆,顶,舵,烽,将,梁,振,执,鹿,晟,张,章"
+    charstring_04 = "朗,从,带,袋,顶,烽,将,梁,振,执,鹿,晟,张,章,翎"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -483,7 +483,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "掰,焙,采,场,焯,掣,程,塍,嗒,傣,贷,单,氮,悼,登,迪,觌,诋,邸,睇,掂,阽,惦,跌,喋,耋,痘,短,惇,敦,掇,迩,焚,钬,焦,接,嗟,晶,就,厥,吭,詈,晾,量,欻,诊,轸,证,焜,啦,喇,琅,稂,劳,犁,喱,理,傈,痢,捩,裂,趔,琉,硫,虏,掠,抡,捺,喃,赧,捻,傩,晴,闰,婼,邰,毯,探,掏,啼,腆,掭,祧,迢,贴,婷,痛,饨,跎,酡,惋,惘,喔,窝,幄,寻,循,巽,焱,蛘,轺,轶,媛,蛰,彘,智,痣,轴,粢"
     charstring_02 = "掰,焙,采,场,程,单,登,迪,敦,焦,接,晶,理,铁,媛,智,轴"
     charstring_03 = "掰,焙,采,场,程,单,登,迪,敦,焦,接,晶,理,铁,媛,智,轴"
-    charstring_04 = "能,焙,场,程,单,登,迪,敦,焦,接,晶,就,量,证,琅,理,琉,闰,婷,循,巽,轴,媛,智"
+    charstring_04 = "能,焙,场,程,单,登,迪,敦,焦,接,晶,就,量,琅,理,琉,闰,婷,循,巽,媛,智"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -496,7 +496,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "稗,煲,煏,煸,裎,嗤,媸,驰,传,搭,靼,迨,亶,当,砀,嗲,电,殿,揲,牒,鼎,督,煅,顿,躲,惰,跺,烦,觥,煳,焕,煌,晃,幌,诙,迹,煎,炼,煊,睐,啷,廊,酪,诔,傫,愣,蜊,里,赁,零,旒,偻,赂,辂,琭,禄,路,乱,煤,睦,乃,恼,农,暖,逄,稔,塔,痰,逃,绨,提,跳,蜓,艇,退,煺,蜕,脱,驮,陀,顽,脘,畹,煨,炜,蜗,熄,烟,琰,扬,旸,炀,徭,虞,煜,詹,盏,照,罩,蜇,郅,置,雉,追,惴,琢,赀,觜,趑,訾"
     charstring_02 = "驰,传,搭,当,鼎,督,煌,煌,幌,迹,炼,路,农,暖,提,烟,扬,照,琢"
     charstring_03 = "驰,传,搭,当,鼎,督,煌,幌,迹,炼,路,农,暖,提,烟,扬,照,琢"
-    charstring_04 = "驰,传,当,鼎,督,顿,煌,晃,幌,迹,炼,里,禄,路,农,暖,提,扬,照,琢"
+    charstring_04 = "驰,传,当,鼎,督,顿,煌,虞,迹,炼,焕,里,禄,路,农,暖,提,扬,照,琢,煜,毓,炜"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -509,7 +509,7 @@ def InitHuoData(ChineseCharSet_Huo):
     charstring_01 = "熬,畅,尘,逞,瞅,绰,瘩,捣,嘀,嫡,递,腚,胨,郖,逗,端,对,裰,夺,尔,裹,伙,奖,尽,恺,奁,连,踉,僚,寥,廖,瘌,辣,罱,郎,嫪,嫘,酹,嘞,嫠,粼,绫,领,熘,绺,喽,陋,绿,纶,裸,雒,瑙,嫩,宁,喏,搦,炝,熔,煽,裳,台,态,叹,搪,耥,趟,慆,慝,滕,逖,惕,裼,舔,蜩,通,透,图,团,箨,蜿,绾,腕,诶,鞅,疡,摇,荧,毓,搌,绽,嫜,彰,胀,幛,赵,这,祯,种,逐,缀,缁"
     charstring_02 = "畅,尘,逞,瞅,绰,端,尔,伙,连,僚,寥,郎,领,缘,宁,熔,煽,裳,台,态,搪,趟,通鞅,荧,绽,彰,种,逐"
     charstring_03 = "畅,尘,逞,瞅,绰,端,尔,伙,连,僚,寥,郎,领,缘,宁,熔,煽,裳,台,态,搪,趟,通,鞅,荧,绽,彰,种,逐"
-    charstring_04 = "畅,尘,绰,端,尔,伙,恺,连,寥,郎,领,绿,宁,熔,裳,态,滕,通,透,图,鞅,荧,毓,绽,彰,赵,逐"
+    charstring_04 = "畅,尘,绰,端,尔,伙,恺,连,寥,郎,领,绿,宁,熔,裳,态,滕,通,透,图,鞅,荧,绽,彰,赵,逐,祯,绫"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
 
@@ -711,9 +711,9 @@ def InitTuData(ChineseCharSet_Tu):
     # region 土字初始化
 
     # 1画土字
-    # charstring_01 = "己,山,土,丸,兀,丫,也,尢,于"
-    # charstring_02 = "土,己,于"
-    # charstring_03 = "土,己,于"
+    charstring_01 = "一"
+    charstring_02 = "一"
+    charstring_03 = "一"
     charstring_04 = "一"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
@@ -724,9 +724,9 @@ def InitTuData(ChineseCharSet_Tu):
     TuFullList = TuFullList + chinchar1tu
 
     # 2画土字
-    # charstring_01 = "己,山,土,丸,兀,丫,也,尢,于"
-    # charstring_02 = "土,己,于"
-    # charstring_03 = "土,己,于"
+    charstring_01 = "又"
+    charstring_02 = "又"
+    charstring_03 = "又"
     charstring_04 = "又"
 
     charstring_ori = getcharstringbynum(CharsetNum, charstring_01, charstring_02, charstring_03, charstring_04)
